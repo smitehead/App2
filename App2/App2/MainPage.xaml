@@ -9,7 +9,7 @@
         </Frame>
         <Label Text="여긴어디" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="나는누구" FontSize="16" Padding="30,0,30,0"/>
-        <Button Text="버튼이다 ">바튼</Button>
+        <Button Text="버튼이다" Clicked="Butten_Clicked"></Button>
         <Label FontSize="16" Padding="30,24,30,0">
             <Label.FormattedText>
                 <FormattedString>

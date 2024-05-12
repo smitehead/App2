@@ -14,5 +14,9 @@ namespace App2
         {
             InitializeComponent();
         }
+        private void Butten_Clicked(object sender ,EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("버튼입력!");
+        }
     }
 }
