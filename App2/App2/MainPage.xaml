@@ -5,22 +5,13 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="반갑다" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="펫키위키" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="여긴어디" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="나는누구" FontSize="16" Padding="30,0,30,0"/>
-        <Label Text="ㅎㅇ"/>
-        <Button Text="버튼이다" Clicked="Butten_Clicked"></Button>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="여기 span은 어디 "/>
-                        <Span Text="여긴 url있던데 이건 머지?" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <Label Text="로그인" FontSize="16" Padding="30,0,30,0"/>
+        <Entry Placeholder="이름입력" PlaceholderColor="Black" FontSize="Body" ></Entry>
+        <Entry Placeholder="패스워드" IsPassword="True" PlaceholderColor="Black" FontSize="Body"></Entry>
+        <Label FontSize="16" Padding="30,24,30,0"></Label>
+        <Image Source="https://mblogthumb-phinf.pstatic.net/MjAyMjAxMjVfMTcw/MDAxNjQzMTAyOTg1NjY2.CnGtAfHsMeqzKuAXan3hk102JU0Cw6wM77Hr61YY81gg.BQQMgu9l_SEmNrUAkVF3SQ-VfRnbWZB3LX7cWXwFdmMg.JPEG.minziminzi128/IMG_7363.JPG?type=w800"></Image>
     </StackLayout>
 
 </ContentPage>
