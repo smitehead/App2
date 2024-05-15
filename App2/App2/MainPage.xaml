@@ -11,7 +11,8 @@
         <Entry Placeholder="이름입력" PlaceholderColor="Black" FontSize="Body" ></Entry>
         <Entry Placeholder="패스워드" IsPassword="True" PlaceholderColor="Black" FontSize="Body"></Entry>
         <Label FontSize="16" Padding="30,24,30,0"></Label>
-        <Image Source="https://mblogthumb-phinf.pstatic.net/MjAyMjAxMjVfMTcw/MDAxNjQzMTAyOTg1NjY2.CnGtAfHsMeqzKuAXan3hk102JU0Cw6wM77Hr61YY81gg.BQQMgu9l_SEmNrUAkVF3SQ-VfRnbWZB3LX7cWXwFdmMg.JPEG.minziminzi128/IMG_7363.JPG?type=w800"></Image>
+        <Image Source="https://mblogthumb-phinf.pstatic.net/MjAyMjAxMjVfMTcw/MDAxNjQzMTAyOTg1NjY2.CnGtAfHsMeqzKuAXan3hk102JU0Cw6wM77Hr61YY81gg.BQQMgu9l_SEmNrUAkVF3SQ-VfRnbWZB3LX7cWXwFdmMg.JPEG.minziminzi128/IMG_7363.JPG?type=w800"
+                WidthRequest="100" HeightRequest="100" AnchorX="100" AnchorY="100"></Image>
     </StackLayout>
 
 </ContentPage>
