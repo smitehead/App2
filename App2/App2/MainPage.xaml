@@ -1,18 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.MainPage">
+             x:Class="App2.MainPage"
+             Title="예술가앱">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="펫키위키" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="로그인" FontSize="16" Padding="30,0,30,0"/>
-        <Entry Placeholder="이름입력" PlaceholderColor="Black" FontSize="Body" ></Entry>
-        <Entry Placeholder="패스워드" IsPassword="True" PlaceholderColor="Black" FontSize="Body"></Entry>
-        <Label FontSize="16" Padding="30,24,30,0"></Label>
-        <Image Source="https://mblogthumb-phinf.pstatic.net/MjAyMjAxMjVfMTcw/MDAxNjQzMTAyOTg1NjY2.CnGtAfHsMeqzKuAXan3hk102JU0Cw6wM77Hr61YY81gg.BQQMgu9l_SEmNrUAkVF3SQ-VfRnbWZB3LX7cWXwFdmMg.JPEG.minziminzi128/IMG_7363.JPG?type=w800"
-                WidthRequest="100" HeightRequest="100" AnchorX="100" AnchorY="100"></Image>
+        <Image Source="https://cdn-icons-png.flaticon.com/128/2171/2171990.png"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand">
+        </Image>
+        <Label Text="원하는 예술가들을 만나보세요"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="Title">
+        </Label>
+        <StackLayout Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+
+            <Button Text="예술가 목록"
+                Clicked="NavigateToArtists" />
+
+            <Button Text="즐겨찾기"
+                    Command="{Binding NavigateToFavoritesCommand}" />
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -14,9 +15,12 @@ namespace App2
         {
             InitializeComponent();
         }
-        private void Butten_Clicked(object sender ,EventArgs e)
+
+        private void NavigateToArtists(object sender, EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("버튼입력!");
+            Navigation.PushAsync(new ArtistsPage());
         }
     }
 }
+
+
