@@ -14,6 +14,7 @@ namespace App2
         public MainPage()
         {
             InitializeComponent();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         private void NavigateToArtists(object sender, EventArgs e)
