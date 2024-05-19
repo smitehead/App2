@@ -3,43 +3,98 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.MainPage"
              Title="한손의 미술관">
-
-    <StackLayout>
-        <Image Source="https://cdn-icons-png.flaticon.com/128/2171/2171990.png"
+    <ScrollView>
+        <StackLayout>
+            <Frame BorderColor="Gray"
+                CornerRadius="10"
+                Padding="5"
+                Margin="0,20,0,0"
                 HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand">
-        </Image>
-        <Label Text="작은 미술관"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                FontSize="Title">
-        </Label>
-
-        <StackLayout Orientation="Horizontal"
+                VerticalOptions="Start">
+                <Image Source="https://blogfiles.pstatic.net/MjAxODA5MTZfMTQ3/MDAxNTM3MTA5NTI2OTUw.g7ze_h-HrXk0IJlAGBWh4LM-p2wpzefaK2JkWekX6EQg.LON9xitKA_6DrFEZ9I7vp9IHxh10zWUJWVPWl2wUTygg.JPEG.gldiadia/%EA%B3%A0%ED%9D%90-%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0.jpg?type=w2"
                     HorizontalOptions="Center"
-                    VerticalOptions="Center">
+                    VerticalOptions="Start"
+                    WidthRequest="250">
+                </Image>
+            </Frame>
+            <Label Text="작은 미술관"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                FontSize="Large"
+                TextColor="Black"
+                FontAttributes="Bold"
+                Margin="0,10,0,0">
+            </Label>
 
-            <Button Text="동양화"
-                    FontSize="Large"
-                    TextColor="Blue"
-                    BackgroundColor="LightGray"
+            <StackLayout Orientation="Horizontal"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                <Button Text="동양화"
+                    FontSize="Small"
+                    TextColor="Black"
+                    BorderColor="LightGray"
+                    BackgroundColor="white"
+                    WidthRequest="90"
+                    HeightRequest="40"
                     Clicked="Button_Clicked2"></Button>
-            <Button Text="서양화"
-                    FontSize="Large"
-                    TextColor="Blue"
-                    BackgroundColor="LightGray"
+                <Button Text="서양화"
+                    FontSize="Small"
+                    TextColor="Black"
+                    BorderColor="LightGray"
+                    BackgroundColor="white"
+                    WidthRequest="90"
+                    HeightRequest="40"
                     Clicked="Button_Clicked3"></Button>
-            <Button Text="미술분야"
-                    FontSize="Large"
-                    TextColor="Blue"
-                    BackgroundColor="LightGray"
+                <Button Text="미술분야"
+                    FontSize="Small"
+                    TextColor="Black"
+                    BorderColor="LightGray"
+                    BackgroundColor="white"
+                    WidthRequest="90"
+                    HeightRequest="40"
                     Clicked="Button_Clicked4"></Button>
-            <Button Text="고객센터"
-                    FontSize="Large"
-                    TextColor="Blue"
-                    BackgroundColor="LightGray"
-                    Clicked="Button_Clicked5"></Button>
+                <Button Text="고객센터"
+                    FontSize="Small"
+                    TextColor="Black"
+                    BorderColor="LightGray"
+                    BackgroundColor="white"
+                    WidthRequest="90"
+                    Clicked="Button_Clicked5"
+                    HeightRequest="40"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Start">
+                <!-- 두 번째 이미지 -->
+                <Frame BorderColor="Gray"
+                       CornerRadius="10"
+                       Padding="5"
+                       Margin="0,20,10,0"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start">
+                    <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTJfMTY3%2FMDAxNjQxOTcyOTk5NjM4.esrxI4VZZ-47f-j_X5P9PePIsf6VTOQkFycpkkNEyvIg.zJeMzpndIURydcHEBR8ky_3jPlUCPwSbDpVghKf9tkUg.JPEG.baecheop%2F36_%25BB%25E7%25C0%25CE%25BE%25CF.jpg"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"
+                           WidthRequest="100"
+                           HeightRequest="85">
+                    </Image>
+                </Frame>
+                <!-- 세 번째 이미지 -->
+                <Frame BorderColor="Gray"
+                       CornerRadius="10"
+                       Padding="5"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start">
+                    <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMTBfMTYg%2FMDAxNjc2MDE0NjAxMzE1.K007hi2Mz-t_uS_iWDGSVuAQO7vX8kDKC6e7Mj9iRHsg.XQFABl_e4iwITpcaZGk2UgSn1YNwG6Si5u6JhDgurmAg.JPEG.kjher310%2FVincent_van_Gogh_The_Bedroom_Sample.jpg"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"
+                           WidthRequest="100"
+                           HeightRequest="80">
+                    </Image>
+                </Frame>
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
-
+    </ScrollView>
 </ContentPage>
