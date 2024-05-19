@@ -15,9 +15,9 @@ namespace App2
         {
             InitializeComponent();
         }
-        private void Button_Clicked1(object sender, EventArgs e)
+        private async void Button_Clicked1(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new ArtistsPage();
+            await Navigation.PushAsync(new ArtistsPage());
         }
 
     }
