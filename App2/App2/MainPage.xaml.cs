@@ -14,13 +14,12 @@ namespace App2
         public MainPage()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new MainPage());
+        }
+        private void Button_Clicked1(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new ArtistsPage();
         }
 
-        private void NavigateToArtists(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new ArtistsPage());
-        }
     }
 }
 

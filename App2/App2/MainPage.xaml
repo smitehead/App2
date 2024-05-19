@@ -18,11 +18,9 @@
                     HorizontalOptions="Center"
                     VerticalOptions="Center">
 
-            <Button Text="예술가 목록"
-                Clicked="NavigateToArtists" />
+            <Button Text="예술가 목록" Clicked="Button_Clicked1"></Button>
 
-            <Button Text="즐겨찾기"
-                    Command="{Binding NavigateToFavoritesCommand}" />
+            <Button Text="즐겨찾기"></Button>
         </StackLayout>
     </StackLayout>
 
