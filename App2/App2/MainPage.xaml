@@ -2,25 +2,43 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.MainPage"
-             Title="예술가앱">
+             Title="한손의 미술관">
 
     <StackLayout>
         <Image Source="https://cdn-icons-png.flaticon.com/128/2171/2171990.png"
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand">
         </Image>
-        <Label Text="원하는 예술가들을 만나보세요"
+        <Label Text="작은 미술관"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 FontSize="Title">
         </Label>
+
         <StackLayout Orientation="Horizontal"
                     HorizontalOptions="Center"
                     VerticalOptions="Center">
 
-            <Button Text="예술가 목록" Clicked="Button_Clicked1"></Button>
-
-            <Button Text="즐겨찾기"></Button>
+            <Button Text="동양화"
+                    FontSize="Large"
+                    TextColor="Blue"
+                    BackgroundColor="LightGray"
+                    Clicked="Button_Clicked2"></Button>
+            <Button Text="서양화"
+                    FontSize="Large"
+                    TextColor="Blue"
+                    BackgroundColor="LightGray"
+                    Clicked="Button_Clicked3"></Button>
+            <Button Text="미술분야"
+                    FontSize="Large"
+                    TextColor="Blue"
+                    BackgroundColor="LightGray"
+                    Clicked="Button_Clicked4"></Button>
+            <Button Text="고객센터"
+                    FontSize="Large"
+                    TextColor="Blue"
+                    BackgroundColor="LightGray"
+                    Clicked="Button_Clicked5"></Button>
         </StackLayout>
     </StackLayout>
 
