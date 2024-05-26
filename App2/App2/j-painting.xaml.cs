@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace App2
@@ -15,6 +9,11 @@ namespace App2
         public j_painting()
         {
             InitializeComponent();
+
+            webView.Source = new UrlWebViewSource
+            {
+                Url = "https://namu.wiki/w/%ED%95%9C%EA%B5%AD%ED%99%94",
+            };
         }
     }
 }
