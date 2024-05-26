@@ -1,12 +1,94 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Artcategory">
+             x:Class="App2.Artcategory"             
+             BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Frame BorderColor="Black"
+                       CornerRadius="5"
+                       Padding="5"
+                       Margin="0,10,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Image Source="https://weekly.chosun.com/news/photo/202005/15747_1.jpg"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"
+                           WidthRequest="250">
+                    </Image>
+                </Frame>
+                <Label Text="미술분야"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Margin="0,10,0,10"/>
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Start"
+                             Spacing="15">
+                    <StackLayout>
+                        <Button Text="현대미술"
+                                Clicked="Modernart"
+                                FontSize="Small"
+                                TextColor="Black"
+                                BorderColor="LightGray"
+                                BackgroundColor="White"
+                                WidthRequest="110"
+                                HeightRequest="40"/>
+                        <Image Source="https://mblogthumb-phinf.pstatic.net/MjAyMTA0MjhfMjI4/MDAxNjE5NjE3MDEzNjEz.IP_glYKRSars6LcNy0BWcQ_r3k18JiwyOZLj7gjAEasg.aEP6TO5tDmNTMy0hDRBxMeC1rRri7G1URxWajfxM6Ugg.JPEG.artephile/Edouard_Manet_Young_Flautist_or_The_Fifer_1866_97x160.5_Orsay.jpg?type=w800"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Margin="0,8,0,0"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button Text="초현실주의"
+                                Clicked="Surrealism"
+                                FontSize="Small"
+                                TextColor="Black"
+                                BorderColor="LightGray"
+                                BackgroundColor="White"
+                                WidthRequest="110"
+                                HeightRequest="40"/>
+                        <Image Source="https://lh3.googleusercontent.com/proxy/J8JGcNICjAfeCRqaPmx3xW0rvzc0ELC7SrV_INUMOG9P_J6tHa-C_9ajC4F872fkDN8ZnSo9k7LQiGd_a-ph67oveKOk1qfP2TOXP88jDhrV7FwlhMz35AjaaYh_UA"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Margin="0,8,0,0"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button Text="팝아트"
+                                FontSize="Small"
+                                Clicked="Popart"
+                                TextColor="Black"
+                                BorderColor="LightGray"
+                                BackgroundColor="White"
+                                WidthRequest="110"
+                                HeightRequest="40"/>
+                        <Image Source="https://mblogthumb-phinf.pstatic.net/MjAxOTEyMTRfMTcz/MDAxNTc2MjU0NTE4OTE3.uW7EtOoPLVwa9xWgpH9BT8k0jnU2doPZtD-QCpQeqpAg.WFfqSTHYOhNbXsu3Z3OBwbiCMrwUXzyMlXHKuaOCFbQg.JPEG.leemj0711/1576254518156.jpg?type=w800"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Margin="0,8,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout VerticalOptions="Start" Margin="0,20,0,0">
+                    <Label Text="- 현대미술은 전통적인 형식에서 벗어나 새로운 시도를 통해 창의적인 표현을 중시합니다. 독창적인 아이디어와 작가의 의도를 이해해보세요."
+                           FontSize="14" HorizontalTextAlignment="Center"/>
+                    <Label Text="- 초현실주의는 무의식의 세계를 탐구하며 꿈과 현실을 넘나드는 이미지를 특징으로 합니다. 숨겨진 상징과 작가의 무의식적 표현을 발견해보세요."
+                           FontSize="14" HorizontalTextAlignment="Center"/>
+                    <Label Text="- 팝아트는 대중문화와 소비사회를 반영하여 일상적인 사물과 이미지를 재해석한 것이 특징입니다. 작품의 당시 사회적 맥락을 이해해보세요." 
+                           FontSize="14" HorizontalTextAlignment="Center"/>
+                    <Label Text="- 현대미술(샘, 넘버 1A)" FontSize="14" HorizontalTextAlignment="Center"/>
+                    <Label Text="  초현실주의(기억의 지속, 이미지의 배반)" FontSize="14" HorizontalTextAlignment="Center"/>
+                    <Label Text="  팝아트(마릴린 딥티크, 키스) 등이 대표작" FontSize="14" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

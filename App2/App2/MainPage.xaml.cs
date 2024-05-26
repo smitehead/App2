@@ -15,10 +15,6 @@ namespace App2
         {
             InitializeComponent();
         }
-        private async void Button_Clicked1(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ArtistsPage());
-        }
         private async void Button_Clicked2(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Orientalpainting());

@@ -16,5 +16,18 @@ namespace App2
 		{
 			InitializeComponent ();
 		}
-	}
+        private async void Kprinting(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new k_painting());
+        }
+        private async void Jprinting(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new j_painting());
+        }
+        private async void Cprinting(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new c_painting());
+        }
+
+    }
 }

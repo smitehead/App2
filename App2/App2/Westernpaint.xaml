@@ -1,12 +1,94 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Westernpaint">
+             x:Class="App2.Westernpaint"
+             BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Frame BorderColor="Black"
+                       CornerRadius="5"
+                       Padding="5"
+                       Margin="0,10,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMTBfMTYg%2FMDAxNjc2MDE0NjAxMzE1.K007hi2Mz-t_uS_iWDGSVuAQO7vX8kDKC6e7Mj9iRHsg.XQFABl_e4iwITpcaZGk2UgSn1YNwG6Si5u6JhDgurmAg.JPEG.kjher310%2FVincent_van_Gogh_The_Bedroom_Sample.jpg"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"
+                           WidthRequest="250">
+                    </Image>
+                </Frame>
+                <Label Text="서양화"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Margin="0,10,0,10"/>
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Start"
+                             Spacing="25">
+                    <StackLayout>
+                        <Button Text="인물화"
+                                Clicked="Portraitpaint"
+                                FontSize="Small"
+                                TextColor="Black"
+                                BorderColor="LightGray"
+                                BackgroundColor="White"/>
+                        <Image Source="https://lh3.googleusercontent.com/proxy/JfMcXk5wZ6mzfdyLBxpsfjQg98ElSiTn0f_eip-2WjgTCbbtPE0d3h44ZAQOEjigs6v-6pdfwR0O23Az_hQTsSj0WT68"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Margin="0,8,0,0"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button Text="풍경화"
+                                Clicked="Landscape"
+                                FontSize="Small"
+                                TextColor="Black"
+                                BorderColor="LightGray"
+                                BackgroundColor="White"/>
+                        <Image Source="https://m.imaeil.com/photos/2009/05/07/2009050714305243188_m.jpg"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Margin="0,-9,0,0"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button Text="추상화"
+                                Clicked="AbstractArt"
+                                FontSize="Small"
+                                TextColor="Black"
+                                BorderColor="LightGray"
+                                BackgroundColor="White"/>
+                        <Image Source="https://newsimg.sedaily.com/2022/01/24/260ZNU26JH_4.jpg"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Margin="0,8,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout VerticalOptions="Start" Margin="0,30,0,0">
+                    <Label Text="- '서양화'는 유럽을 중심으로 발전해온 다양한 미술 양식을 포함합니다."
+                           FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="- 작품의 구성, 색채, 빛의 표현 등에 주목하여 감상해보세요."
+                           FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="- 인물화(모나리자, 밤의 순찰)" FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="  풍경화(수련, 별이 빛나는 밤)" FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="  추상화(구성 VIII, 게르니카) 등이 대표작" FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="- 서양화는 각각의 시대와 스타일마다 독특한 아름다움을 지니고 있습니다."
+                           FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

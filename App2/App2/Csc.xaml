@@ -1,12 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Csc">
+             x:Class="App2.Csc"
+             BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Label Text="FAQ"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Margin="0,10,0,20"/>
+
+                <!-- 질문1 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q1: 내용을 입력하시오"
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
+                        <Label Text="A1: 내용을 입력하시오"
+                               FontSize="16"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- 질문2 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q2: 내용을 입력하시오"
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
+                        <Label Text="A2: 내용을 입력하시오"
+                               FontSize="16"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- 질문3 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q3: 내용을 입력하시오"
+                                FontSize="Small"
+                                FontAttributes="Bold"
+                                TextColor="Black"
+                                Margin="0,0,0,5"/>
+                        <Label Text="A3: 내용을 입력하시오"
+                                FontSize="16"
+                                TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- 질문4 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q4: 내용을 입력하시오"
+                                FontSize="Small"
+                                FontAttributes="Bold"
+                                TextColor="Black"
+                                Margin="0,0,0,5"/>
+                        <Label Text="A4: 내용을 입력하시오"
+                                FontSize="16"
+                                TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- 질문5 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q5: 내용을 입력하시오"
+                                FontSize="Small"
+                                FontAttributes="Bold"
+                                TextColor="Black"
+                                Margin="0,0,0,5"/>
+                        <Label Text="A5: 내용을 입력하시오"
+                                FontSize="16"
+                                TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- 질문6 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q6: 내용을 입력하시오"
+                                FontSize="Small"
+                                FontAttributes="Bold"
+                                TextColor="Black"
+                                Margin="0,0,0,5"/>
+                        <Label Text="A6: 내용을 입력하시오"
+                                FontSize="16"
+                                TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="5" Margin="0,1,0,0">
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg/1920px-Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg"
+                           HorizontalOptions="Center"
+                           VerticalOptions="End"/>
+                </Frame>
+                <StackLayout VerticalOptions="Start">
+                    <Label Text="고객센터 : 055-123-4567" FontSize="12" HorizontalTextAlignment="right"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

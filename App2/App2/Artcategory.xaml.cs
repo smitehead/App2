@@ -16,5 +16,18 @@ namespace App2
 		{
 			InitializeComponent ();
 		}
-	}
+        private async void Modernart(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new modernart());
+        }
+        private async void Surrealism(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new surrealism());
+
+        }
+        private async void Popart(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new popart());
+        }
+    }
 }

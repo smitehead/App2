@@ -1,12 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Orientalpainting">
+             x:Class="App2.Orientalpainting"
+             BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Frame BorderColor="Black"
+                       CornerRadius="5"
+                       Padding="5"
+                       Margin="0,10,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTJfMTY3%2FMDAxNjQxOTcyOTk5NjM4.esrxI4VZZ-47f-j_X5P9PePIsf6VTOQkFycpkkNEyvIg.zJeMzpndIURydcHEBR8ky_3jPlUCPwSbDpVghKf9tkUg.JPEG.baecheop%2F36_%25BB%25E7%25C0%25CE%25BE%25CF.jpg"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"
+                           WidthRequest="250">
+                    </Image>
+                </Frame>
+                <Label Text="동양화"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Margin="0,10,0,10"/>
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Start"
+                             Spacing="25">
+                    <StackLayout>
+                        <Button Text="중국화"
+                                Clicked="Cprinting"
+                                FontSize="Small"
+                                TextColor="Black"
+                                BorderColor="LightGray"
+                                BackgroundColor="White"/>
+                        <Image Source="http://kr.people.com.cn/NMediaFile/2018/1105/FOREIGN201811051658000440892487648.jpg"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Margin="0,-10,0,0"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button Text="일본화"
+                                Clicked="Jprinting"
+                                FontSize="Small"
+                                TextColor="Black"
+                                BorderColor="LightGray"
+                                BackgroundColor="White"/>
+                        <Image Source="https://www.tsunagujapan.com/wp-content/uploads/2015/06/640px-Nihonbashi_bridge_in_Edo.jpg"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Margin="0,-10,0,0"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button Text="한국화"
+                                Clicked="Kprinting"
+                                FontSize="Small"
+                                TextColor="Black"
+                                BorderColor="LightGray"
+                                BackgroundColor="White"/>
+                        <Image Source="https://i.pinimg.com/originals/25/ab/cc/25abcc392f1200be96b7629ee208c778.jpg"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Margin="0,-10,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout VerticalOptions="Start" Margin="0,20,0,0">
+                    <Label Text="- '동양화'는 동아시아 미술을 총칭하는 포괄적인 개념입니다."
+                            FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="- 1920년 동아일보에 '동양화'라는 표현이 처음 등장했습니다."
+                            FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="- 중국(문인화, 서예)" FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="  일본(우키요에, 고민화)" FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="  한국(서화, 산수화) 등이 대표작" FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="- 작품 속 역사적, 문화적 배경을 이해하면 감상에 도움됩니다." FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,21 @@ namespace App2
 		{
 			InitializeComponent ();
 		}
-	}
+        private async void Portraitpaint(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new portraitpainting());
+
+        }
+        private async void AbstractArt(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AbstractArt());
+
+        }
+        private async void Landscape(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new landscape());
+
+        }
+
+    }
 }
