@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.Memopage"
+             Padding="20">
+
+    <StackLayout>
+        <Label Text="To-Do List"
+               TextColor="#fff"
+               FontSize="20"
+               FontAttributes="Bold"
+               Padding="10"
+               BackgroundColor="#4097e9"
+               HorizontalOptions="Fill"
+               HorizontalTextAlignment="Center"/>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <ListView x:Name="lv_todo" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" 
+                                         Margin="0, 20, 0, 0"
+                                         Spacing="0">
+                                <StackLayout>
+                                    <Label Text="{Binding TimeTodo}" FontSize="11"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Spacing="0">
+                                    <Entry x:Name="et_todo_title"
+                                       Text="{Binding Title}"
+                                       HorizontalOptions="FillAndExpand"/>
+                                    <Button x:Name="btn_todo_modify"
+                                        Text="mod"
+                                        WidthRequest="60"
+                                        Clicked="btn_todo_modify_Clicked"/>
+                                    <Button x:Name="btn_todo_delete"
+                                        Text="Del"
+                                        WidthRequest="60"
+                                        Clicked="btn_todo_delete_Clicked"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <StackLayout BackgroundColor="#deefff"
+                     Padding="10"
+                     Margin="0, 20, 0, 0"
+                     Spacing="0">
+            <Label Text="New To-Do"
+                   TextColor="#4097e9"
+                   FontAttributes="Bold"
+                   FontSize="17"/>
+            <StackLayout Orientation="Vertical">
+                <Entry x:Name="et_todo_new"
+                       TextColor="#1582e9"
+                       Placeholder="Enter new To-Do."/>
+                <Button x:Name="btn_todo_new"
+                        Text="save new to-do"
+                        BackgroundColor="#d85050"
+                        TextColor="#fff"
+                        FontSize="17"
+                        FontAttributes="Bold"
+                        Clicked="btn_todo_new_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

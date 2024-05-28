@@ -31,6 +31,10 @@ namespace App2
         {
             await Navigation.PushAsync(new Csc());
         }
+        private async void Button_Clicked6(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Memopage());
+        }
 
     }
 }

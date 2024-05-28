@@ -105,6 +105,30 @@
                     </Frame>
                 </StackLayout>
 
+                <StackLayout>
+                    <Button Text="메모페이지"
+                        FontSize="Small"
+                        TextColor="Black"
+                        BorderColor="LightGray"
+                        BackgroundColor="white"
+                        WidthRequest="90"
+                        HeightRequest="40"
+                        Clicked="Button_Clicked6"></Button>
+                    <Frame BorderColor="Gray"
+                           CornerRadius="100"
+                           Padding="0"
+                           Margin="0,5,0,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Image Source="https://weekly.chosun.com/news/photo/202005/15747_1.jpg"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Start"
+                            WidthRequest="80"
+                            HeightRequest="65">
+                        </Image>
+                    </Frame>
+                </StackLayout>
+
                 <!-- 고객센터 -->
                 <StackLayout>
                     <Button Text="고객센터"
