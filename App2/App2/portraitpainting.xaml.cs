@@ -12,18 +12,19 @@ using Xamarin.Forms;
 
 namespace App2
 {
-
     [DesignTimeVisible(false)]
     public partial class portraitpainting : ContentPage
     {
-
         SQLiteAsyncConnection conn;
         ObservableCollection<TodoItem> todos;
+
         public portraitpainting()
         {
             InitializeComponent();
-
             conn = DependencyService.Get<ISQLite>().GetConnection();
+
+            // todos 컬렉션을 초기화합니다.
+            todos = new ObservableCollection<TodoItem>();
         }
 
         protected override async void OnAppearing()
@@ -40,14 +41,8 @@ namespace App2
 
         public ObservableCollection<TodoItem> Todos
         {
-            get
-            {
-                return todos;
-            }
-            set
-            {
-                todos = value;
-            }
+            get { return todos; }
+            set { todos = value; }
         }
 
         private async void btn_todo_new_Clicked(object sender, EventArgs e)
@@ -59,7 +54,6 @@ namespace App2
             };
 
             await conn.InsertAsync(todo);
-            //Todos.Add(todo);
             OnAppearing();
 
             et_todo_new.Text = "";
@@ -77,7 +71,6 @@ namespace App2
                 await DisplayAlert("Modify", "Data has changed.", "confirm");
                 OnAppearing();
             }
-
         }
 
         private async void btn_todo_delete_Clicked(object sender, EventArgs e)
@@ -89,10 +82,8 @@ namespace App2
             if (await result)
             {
                 await conn.DeleteAsync(todoItem);
-                //todos.Remove(todoItem);
                 OnAppearing();
             }
         }
-
     }
 }
