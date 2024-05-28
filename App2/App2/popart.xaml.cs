@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace App2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class popart : ContentPage
+    public partial class Popart : ContentPage
     {
-        public popart()
+        public Popart()
         {
             InitializeComponent();
         }

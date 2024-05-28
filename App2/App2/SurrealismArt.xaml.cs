@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace App2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ModernArt : ContentPage
+    public partial class SurrealismArt : ContentPage
     {
-        public ModernArt()
+        public SurrealismArt()
         {
             InitializeComponent();
         }

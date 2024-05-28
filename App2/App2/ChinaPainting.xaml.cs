@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace App2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class landscape : ContentPage
+    public partial class ChinaPainting : ContentPage
     {
-        public landscape()
+        public ChinaPainting()
         {
             InitializeComponent();
         }

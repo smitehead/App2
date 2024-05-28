@@ -18,15 +18,15 @@ namespace App2
 		}
         private async void Kprinting(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new k_painting());
+            await Navigation.PushAsync(new KoreanPainting());
         }
         private async void Jprinting(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new j_painting());
+            await Navigation.PushAsync(new JapanPainting());
         }
         private async void Cprinting(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new c_painting());
+            await Navigation.PushAsync(new ChinaPainting());
         }
 
     }

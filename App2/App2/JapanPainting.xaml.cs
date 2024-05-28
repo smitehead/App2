@@ -4,15 +4,15 @@ using Xamarin.Forms.Xaml;
 namespace App2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class j_painting : ContentPage
+    public partial class JapanPainting : ContentPage
     {
-        public j_painting()
+        public JapanPainting()
         {
             InitializeComponent();
 
             webView.Source = new UrlWebViewSource
             {
-                Url = "https://namu.wiki/w/%ED%95%9C%EA%B5%AD%ED%99%94",
+                Url = "https://namu.wiki/w/%EC%9A%B0%ED%82%A4%EC%9A%94%EC%97%90",
             };
         }
     }

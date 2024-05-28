@@ -18,7 +18,7 @@ namespace App2
 		}
         private async void Portraitpaint(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new portraitpainting());
+            await Navigation.PushAsync(new PortraitPainting());
 
         }
         private async void AbstractArt(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace App2
         }
         private async void Landscape(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new landscape());
+            await Navigation.PushAsync(new LandscapeArt());
 
         }
 

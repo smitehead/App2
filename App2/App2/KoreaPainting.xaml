@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.k_painting">
+             x:Class="App2.KoreanPainting">
 
-    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+    <ContentPage.Content>
         <WebView x:Name="webView"
                  VerticalOptions="FillAndExpand"
                  HorizontalOptions="FillAndExpand" />
-    </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>

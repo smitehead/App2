@@ -18,16 +18,16 @@ namespace App2
 		}
         private async void Modernart(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new modernart());
+            await Navigation.PushAsync(new ModernArt());
         }
         private async void Surrealism(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new surrealism());
+            await Navigation.PushAsync(new SurrealismArt());
 
         }
         private async void Popart(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new popart());
+            await Navigation.PushAsync(new Popart());
         }
     }
 }
