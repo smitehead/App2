@@ -40,8 +40,14 @@ namespace App2
         var marker = new google.maps.Marker({
           position: location,
           map: map,
-          title: 'Desired Location'
+          title: '경남대 1공학관'
         });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+        // 초기 정보 창 표시
+        infowindow.open(map, marker);
       }
     </script>
     <script src=""https://maps.google.com/maps/api/js?key=AIzaSyASufxgy93d9XEAsliXeUgBtZfSSYEy5a8&callback=initMap"" 

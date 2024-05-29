@@ -45,13 +45,13 @@
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
                         <Label Text="Q3: 내용을 입력하시오"
-                                FontSize="Small"
-                                FontAttributes="Bold"
-                                TextColor="Black"
-                                Margin="0,0,0,5"/>
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
                         <Label Text="A3: 내용을 입력하시오"
-                                FontSize="16"
-                                TextColor="Black"/>
+                               FontSize="16"
+                               TextColor="Black"/>
                     </StackLayout>
                 </Frame>
 
@@ -59,13 +59,13 @@
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
                         <Label Text="Q4: 내용을 입력하시오"
-                                FontSize="Small"
-                                FontAttributes="Bold"
-                                TextColor="Black"
-                                Margin="0,0,0,5"/>
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
                         <Label Text="A4: 내용을 입력하시오"
-                                FontSize="16"
-                                TextColor="Black"/>
+                               FontSize="16"
+                               TextColor="Black"/>
                     </StackLayout>
                 </Frame>
 
@@ -73,13 +73,13 @@
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
                         <Label Text="Q5: 내용을 입력하시오"
-                                FontSize="Small"
-                                FontAttributes="Bold"
-                                TextColor="Black"
-                                Margin="0,0,0,5"/>
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
                         <Label Text="A5: 내용을 입력하시오"
-                                FontSize="16"
-                                TextColor="Black"/>
+                               FontSize="16"
+                               TextColor="Black"/>
                     </StackLayout>
                 </Frame>
 
@@ -87,26 +87,36 @@
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
                         <Label Text="Q6: 내용을 입력하시오"
-                                FontSize="Small"
-                                FontAttributes="Bold"
-                                TextColor="Black"
-                                Margin="0,0,0,5"/>
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
                         <Label Text="A6: 내용을 입력하시오"
-                                FontSize="16"
-                                TextColor="Black"/>
+                               FontSize="16"
+                               TextColor="Black"/>
                     </StackLayout>
                 </Frame>
 
-                <!-- 구글 맵 WebView -->
-                <Frame BorderColor="LightGray" CornerRadius="5" Padding="5" Margin="0,1,0,0">
-                    <WebView x:Name="GoogleMapWebView" 
-                             HeightRequest="300"
-                             HorizontalOptions="Center"
-                             VerticalOptions="End"/>
+                <!-- 찾아오시는 길 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Label Text="찾아오시는 길:경남대학교 1공학관 "
+                               FontSize="Medium"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+                        <WebView x:Name="GoogleMapWebView"
+                                 WidthRequest="150"
+                                 HeightRequest="150"
+                                 HorizontalOptions="EndAndExpand"
+                                 VerticalOptions="Center"/>
+                    </StackLayout>
                 </Frame>
 
-                <StackLayout VerticalOptions="Start">
-                    <Label Text="고객센터 : 055-123-4567" FontSize="12" HorizontalTextAlignment="End"/>
+                <StackLayout VerticalOptions="Start" Padding="0,10,0,0">
+                    <Label Text="고객센터 : 055-123-4567"
+                           FontSize="12"
+                           HorizontalTextAlignment="End"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
