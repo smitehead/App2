@@ -5,18 +5,34 @@
              BackgroundColor="WhiteSmoke">
     <ScrollView>
         <StackLayout>
-            <Frame BorderColor="Black"
-                CornerRadius="5"
-                Padding="10"
-                Margin="0,20,0,0"
-                HorizontalOptions="Center"
-                VerticalOptions="Start">
-                <Image Source="https://blogfiles.pstatic.net/MjAxODA5MTZfMTQ3/MDAxNTM3MTA5NTI2OTUw.g7ze_h-HrXk0IJlAGBWh4LM-p2wpzefaK2JkWekX6EQg.LON9xitKA_6DrFEZ9I7vp9IHxh10zWUJWVPWl2wUTygg.JPEG.gldiadia/%EA%B3%A0%ED%9D%90-%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0.jpg?type=w2"
+            <Frame BorderColor="Goldenrod"
+                    BackgroundColor="Goldenrod"
+                    CornerRadius="0"
+                    Padding="2"
+                    Margin="0,20,0,0"
                     HorizontalOptions="Center"
-                    VerticalOptions="Start"
-                    WidthRequest="250">
-                </Image>
+                    VerticalOptions="Start">
+                <Frame BorderColor="DarkRed"
+                        BackgroundColor="DarkRed"
+                        CornerRadius="0"
+                        Padding="5"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start">
+                    <Frame BorderColor="White"
+                        BackgroundColor="White"
+                        CornerRadius="0"
+                        Padding="18"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start">
+                        <Image Source="https://blogfiles.pstatic.net/MjAxODA5MTZfMTQ3/MDAxNTM3MTA5NTI2OTUw.g7ze_h-HrXk0IJlAGBWh4LM-p2wpzefaK2JkWekX6EQg.LON9xitKA_6DrFEZ9I7vp9IHxh10zWUJWVPWl2wUTygg.JPEG.gldiadia/%EA%B3%A0%ED%9D%90-%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0.jpg?type=w2"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start"
+                            WidthRequest="210">
+                        </Image>
+                    </Frame>
+                </Frame>
             </Frame>
+
             <Label Text="작은 미술관"
                 HorizontalOptions="Center"
                 VerticalOptions="Start"
@@ -31,19 +47,19 @@
                 VerticalOptions="Center">
 
                 <!-- 동양화 -->
-                <StackLayout>
+                <StackLayout Margin="10,0">
                     <Button Text="동양화"
                         FontSize="Small"
                         TextColor="Black"
                         BorderColor="LightGray"
-                        BackgroundColor="white"
+                        BackgroundColor="White"
                         WidthRequest="90"
                         HeightRequest="40"
                         Clicked="Button_Clicked2"></Button>
                     <Frame BorderColor="Gray"
                            CornerRadius="100"
                            Padding="0"
-                           Margin="0,5,0,0"
+                           Margin="0,5,0,20"
                            HorizontalOptions="Center"
                            VerticalOptions="Start">
                         <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTJfMTY3%2FMDAxNjQxOTcyOTk5NjM4.esrxI4VZZ-47f-j_X5P9PePIsf6VTOQkFycpkkNEyvIg.zJeMzpndIURydcHEBR8ky_3jPlUCPwSbDpVghKf9tkUg.JPEG.baecheop%2F36_%25BB%25E7%25C0%25CE%25BE%25CF.jpg"
@@ -56,7 +72,7 @@
                 </StackLayout>
 
                 <!-- 서양화 -->
-                <StackLayout>
+                <StackLayout Margin="10,0">
                     <Button Text="서양화"
                         FontSize="Small"
                         TextColor="Black"
@@ -68,7 +84,7 @@
                     <Frame BorderColor="Gray"
                            CornerRadius="100"
                            Padding="0"
-                           Margin="0,5,0,0"
+                           Margin="0,5,0,20"
                            HorizontalOptions="Center"
                            VerticalOptions="Start">
                         <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMTBfMTYg%2FMDAxNjc2MDE0NjAxMzE1.K007hi2Mz-t_uS_iWDGSVuAQO7vX8kDKC6e7Mj9iRHsg.XQFABl_e4iwITpcaZGk2UgSn1YNwG6Si5u6JhDgurmAg.JPEG.kjher310%2FVincent_van_Gogh_The_Bedroom_Sample.jpg"
@@ -81,7 +97,7 @@
                 </StackLayout>
 
                 <!-- 미술분야 -->
-                <StackLayout>
+                <StackLayout Margin="10,0">
                     <Button Text="미술분야"
                         FontSize="Small"
                         TextColor="Black"
@@ -93,7 +109,7 @@
                     <Frame BorderColor="Gray"
                            CornerRadius="100"
                            Padding="0"
-                           Margin="0,5,0,0"
+                           Margin="0,5,0,20"
                            HorizontalOptions="Center"
                            VerticalOptions="Start">
                         <Image Source="https://weekly.chosun.com/news/photo/202005/15747_1.jpg"
@@ -104,9 +120,9 @@
                         </Image>
                     </Frame>
                 </StackLayout>
-
-                <StackLayout>
-                    <Button Text="메모페이지"
+            </StackLayout>
+            <StackLayout>
+                <Button Text="감상문"
                         FontSize="Small"
                         TextColor="Black"
                         BorderColor="LightGray"
@@ -114,24 +130,9 @@
                         WidthRequest="90"
                         HeightRequest="40"
                         Clicked="Button_Clicked6"></Button>
-                    <Frame BorderColor="Gray"
-                           CornerRadius="100"
-                           Padding="0"
-                           Margin="0,5,0,0"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Start">
-                        <Image Source="https://weekly.chosun.com/news/photo/202005/15747_1.jpg"
-                            HorizontalOptions="Start"
-                            VerticalOptions="Start"
-                            WidthRequest="80"
-                            HeightRequest="65">
-                        </Image>
-                    </Frame>
-                </StackLayout>
-
-                <!-- 고객센터 -->
-                <StackLayout>
-                    <Button Text="고객센터"
+            </StackLayout>
+            <StackLayout>
+                <Button Text="고객센터"
                         FontSize="Small"
                         TextColor="Black"
                         BorderColor="LightGray"
@@ -139,20 +140,6 @@
                         WidthRequest="90"
                         HeightRequest="40"
                         Clicked="Button_Clicked5"></Button>
-                    <Frame BorderColor="Gray"
-                           CornerRadius="100"
-                           Padding="0"
-                           Margin="0,5,0,0"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Start">
-                        <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Fxemoji_u2049.svg/1200px-Fxemoji_u2049.svg.png"
-                            HorizontalOptions="Start"
-                            VerticalOptions="Start"
-                            WidthRequest="80"
-                            HeightRequest="65">
-                        </Image>
-                    </Frame>
-                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ScrollView>

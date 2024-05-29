@@ -3,10 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.ChinaPainting">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="20">
+            <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                   Aspect="AspectFit"
+                   HeightRequest="300"
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="그림 제목"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,5" />
+
+            <Label Text="작가: 작가 이름"
+                   FontSize="Medium"
+                   FontAttributes="Italic"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,5" />
+
+            <Label Text="설명:"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   Margin="0,10,0,5" />
+
+            <Label Text="그림에 대한 설명 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                   FontSize="Medium"
+                   Margin="0,0,0,20" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
