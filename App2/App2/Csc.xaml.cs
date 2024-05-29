@@ -8,7 +8,7 @@ namespace App2
         {
             InitializeComponent();
 
-            // 로컬 HTML 파일 로드
+            // HTML 문자열을 통해 구글 맵을 로드
             var htmlSource = new HtmlWebViewSource
             {
                 Html = @"<!DOCTYPE html>
@@ -17,7 +17,7 @@ namespace App2
                             <title>Google Map</title>
                             <meta name='viewport' content='initial-scale=1.0, user-scalable=no'>
                             <meta charset='utf-8'>
-                            <script src='https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY'></script>
+                            <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyASufxgy93d9XEAsliXeUgBtZfSSYEy5a8'></script>
                             <script>
                                 function initMap() {
                                     var location = { lat: 37.7749, lng: -122.4194 };
