@@ -6,17 +6,32 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="20">
-                <Frame BorderColor="Black"
-                       CornerRadius="5"
-                       Padding="5"
-                       Margin="0,10,0,0"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Start">
-                    <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTJfMTY3%2FMDAxNjQxOTcyOTk5NjM4.esrxI4VZZ-47f-j_X5P9PePIsf6VTOQkFycpkkNEyvIg.zJeMzpndIURydcHEBR8ky_3jPlUCPwSbDpVghKf9tkUg.JPEG.baecheop%2F36_%25BB%25E7%25C0%25CE%25BE%25CF.jpg"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Start"
-                           WidthRequest="250">
-                    </Image>
+                <Frame BorderColor="Goldenrod"
+                        BackgroundColor="Goldenrod"
+                        CornerRadius="0"
+                        Padding="2"
+                        Margin="0,20,0,0"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start">
+                    <Frame BorderColor="DarkRed"
+                            BackgroundColor="DarkRed"
+                            CornerRadius="0"
+                            Padding="5"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                                BackgroundColor="White"
+                                CornerRadius="0"
+                                Padding="18"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Start">
+                            <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTJfMTY3%2FMDAxNjQxOTcyOTk5NjM4.esrxI4VZZ-47f-j_X5P9PePIsf6VTOQkFycpkkNEyvIg.zJeMzpndIURydcHEBR8ky_3jPlUCPwSbDpVghKf9tkUg.JPEG.baecheop%2F36_%25BB%25E7%25C0%25CE%25BE%25CF.jpg"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="220">
+                            </Image>
+                        </Frame>
+                    </Frame>
                 </Frame>
                 <Label Text="동양화"
                        FontSize="Large"
