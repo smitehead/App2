@@ -8,7 +8,7 @@
              Padding="20">
 
     <StackLayout>
-        <Label Text="To-Do List"
+        <Label Text="감상문"
                TextColor="#fff"
                FontSize="20"
                FontAttributes="Bold"
