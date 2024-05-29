@@ -106,7 +106,7 @@
                 </Frame>
 
                 <StackLayout VerticalOptions="Start">
-                    <Label Text="고객센터 : 055-123-4567" FontSize="12" HorizontalTextAlignment="right"/>
+                    <Label Text="고객센터 : 055-123-4567" FontSize="12" HorizontalTextAlignment="End"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

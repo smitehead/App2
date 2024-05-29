@@ -12,30 +12,42 @@ namespace App2
             var htmlSource = new HtmlWebViewSource
             {
                 Html = @"<!DOCTYPE html>
-                        <html>
-                        <head>
-                            <title>Google Map</title>
-                            <meta name='viewport' content='initial-scale=1.0, user-scalable=no'>
-                            <meta charset='utf-8'>
-                            <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyASufxgy93d9XEAsliXeUgBtZfSSYEy5a8'></script>
-                            <script>
-                                function initMap() {
-                                    var location = { lat: 37.7749, lng: -122.4194 };
-                                    var map = new google.maps.Map(document.getElementById('map'), {
-                                        zoom: 10,
-                                        center: location
-                                    });
-                                    var marker = new google.maps.Marker({
-                                        position: location,
-                                        map: map
-                                    });
-                                }
-                            </script>
-                        </head>
-                        <body onload='initMap()'>
-                            <div id='map' style='height: 100%; width: 100%;'></div>
-                        </body>
-                        </html>"
+<html>
+  <head>
+    <title>Styled Maps - Night Mode</title>
+    <meta name=""viewport"" content=""initial-scale=1.0, user-scalable=no"">
+    <meta charset=""utf-8"">
+    <style>
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=""map""></div>
+    <script>
+      function initMap() {
+        var location = {lat: 35.179481054964654, lng: 128.55545654390698}; // 설정된 위치
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: location,
+          zoom: 17 // 초기 줌 레벨 설정
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          title: 'Desired Location'
+        });
+      }
+    </script>
+    <script src=""https://maps.google.com/maps/api/js?key=AIzaSyASufxgy93d9XEAsliXeUgBtZfSSYEy5a8&callback=initMap"" 
+            type=""text/javascript"" async defer></script>
+  </body>
+</html>"
             };
 
             GoogleMapWebView.Source = htmlSource;
