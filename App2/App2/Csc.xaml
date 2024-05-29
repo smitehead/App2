@@ -96,11 +96,15 @@
                                 TextColor="Black"/>
                     </StackLayout>
                 </Frame>
+
+                <!-- 구글 맵 WebView -->
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="5" Margin="0,1,0,0">
-                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg/1920px-Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg"
-                           HorizontalOptions="Center"
-                           VerticalOptions="End"/>
+                    <WebView x:Name="GoogleMapWebView" 
+                             HeightRequest="300"
+                             HorizontalOptions="Center"
+                             VerticalOptions="End"/>
                 </Frame>
+
                 <StackLayout VerticalOptions="Start">
                     <Label Text="고객센터 : 055-123-4567" FontSize="12" HorizontalTextAlignment="right"/>
                 </StackLayout>
