@@ -1,108 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Orientalpainting"
-             BackgroundColor="WhiteSmoke">
+             x:Class="App2.Orientalpainting">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Padding="20">
-                <Frame BorderColor="Goldenrod"
-                        BackgroundColor="Goldenrod"
-                        CornerRadius="0"
-                        Padding="2"
-                        Margin="0,20,0,0"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Start">
-                    <Frame BorderColor="DarkRed"
-                            BackgroundColor="DarkRed"
-                            CornerRadius="0"
-                            Padding="5"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Start">
-                        <Frame BorderColor="White"
-                                BackgroundColor="White"
-                                CornerRadius="0"
-                                Padding="18"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Start">
-                            <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTJfMTY3%2FMDAxNjQxOTcyOTk5NjM4.esrxI4VZZ-47f-j_X5P9PePIsf6VTOQkFycpkkNEyvIg.zJeMzpndIURydcHEBR8ky_3jPlUCPwSbDpVghKf9tkUg.JPEG.baecheop%2F36_%25BB%25E7%25C0%25CE%25BE%25CF.jpg"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Start"
-                                    WidthRequest="220">
-                            </Image>
+        <AbsoluteLayout>
+            <BoxView Color="FloralWhite" 
+                     AbsoluteLayout.LayoutBounds="0, 0, 1, 0.8"
+                     AbsoluteLayout.LayoutFlags="All" />
+
+            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfNjQg/MDAxNzE3MTMyMDkwOTEx.fT__N9o5hAxLEAK8P80osRy4JxShHPujCl_iKlhvW1Ag.7tVgRwNar-RLhi22FECD_55aCNqnBpnQ6PScXzQDkf8g.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_140735.png?type=w966"
+       Aspect="AspectFill"
+                     AbsoluteLayout.LayoutBounds="0, 1, 1, 0.2"
+                     AbsoluteLayout.LayoutFlags="All" />
+
+            <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                        AbsoluteLayout.LayoutFlags="All">
+
+                <StackLayout Padding="60">
+
+                    <Frame BorderColor="Goldenrod"
+                           BackgroundColor="Goldenrod"
+                           CornerRadius="0"
+                           Padding="1"
+                           Margin="0,30,0,30"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="DarkRed"
+                               BackgroundColor="DarkRed"
+                               CornerRadius="0"
+                               Padding="5"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Frame BorderColor="White"
+                                   BackgroundColor="White"
+                                   CornerRadius="0"
+                                   Padding="18"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start">
+                                <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTU1/MDAxNzE3MTg1NjE1NTU4.c0fSUz5OFXGsERYCWjE0jyFVcTHF7iXZNG2fXqiwlLog.cceNzbh9T4RE49rnil2uVurtXe0rH4dHGhDOntgeV-Eg.PNG/KakaoTalk_20240531_223556269_11.png?type=w966"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Start"
+                                       WidthRequest="220">
+                                </Image>
+                            </Frame>
                         </Frame>
                     </Frame>
-                </Frame>
-                <Label Text="동양화"
-                       FontSize="Large"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Start"
-                       Margin="0,10,0,10"/>
-                <StackLayout Orientation="Horizontal"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Start"
-                             Spacing="25">
-                    <StackLayout>
-                        <Button Text="중국화"
-                                Clicked="Cprinting"
-                                FontSize="Small"
-                                TextColor="Black"
-                                BorderColor="LightGray"
-                                BackgroundColor="White"/>
-                        <Image Source="http://kr.people.com.cn/NMediaFile/2018/1105/FOREIGN201811051658000440892487648.jpg"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Start"
-                               WidthRequest="100"
-                               HeightRequest="100"
-                               Margin="0,-10,0,0"/>
+
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Start"
+                                 Spacing="25">
+                        <StackLayout>
+                            <Button Text="중국화"
+                                    Clicked="Cprinting"
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    BorderColor="LightGray"
+                                    BackgroundColor="White"/>
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfODAg/MDAxNzE3MTg1MDM3NTky.G_oF0-PnXrz3bTYV4B5XWshe14CyD4bKBTlLqz4L4pkg.jPDsmyNcQFvbUQrjKhN1QefF_DnrReejBvu8xevyHJIg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_044756.png?type=w966"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start"
+                                   WidthRequest="100"
+                                   HeightRequest="100"
+                                   Margin="0,-14,0,0"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Button Text="일본화"
+                                    Clicked="Jprinting"
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    BorderColor="LightGray"
+                                    BackgroundColor="White"/>
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfNTUg/MDAxNzE3MTU4NzM5NTE1.LGatdekNew3qJiL8TZKH8qvE-qeHVHFuwcgubm4sUiQg.-ZR4a3dOoCv2JllS264EKCxjAhtj41p60cxdckrmHVAg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_205958.png?type=w966"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start"
+                                   WidthRequest="100"
+                                   HeightRequest="100"
+                                   Margin="0,-10,0,0"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Button Text="한국화"
+                                    Clicked="Kprinting"
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    BorderColor="LightGray"
+                                    BackgroundColor="White"/>
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMjcx/MDAxNzE3MTYwODA4NjQ2.sxd9NRwRcZ4u51nLT8Fpbv_fvi34zCnMhLdoR390Zz4g.lZvnMbySgXYeU3caoTC_kATJKWeshKISddyMtZ1SSyQg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_220634.png?type=w966"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start"
+                                   WidthRequest="100"
+                                   HeightRequest="100"
+                                   Margin="0,-10,0,0"/>
+                        </StackLayout>
                     </StackLayout>
-                    <StackLayout>
-                        <Button Text="일본화"
-                                Clicked="Jprinting"
-                                FontSize="Small"
-                                TextColor="Black"
-                                BorderColor="LightGray"
-                                BackgroundColor="White"/>
-                        <Image Source="https://www.tsunagujapan.com/wp-content/uploads/2015/06/640px-Nihonbashi_bridge_in_Edo.jpg"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Start"
-                               WidthRequest="100"
-                               HeightRequest="100"
-                               Margin="0,-10,0,0"/>
-                    </StackLayout>
-                    <StackLayout>
-                        <Button Text="한국화"
-                                Clicked="Kprinting"
-                                FontSize="Small"
-                                TextColor="Black"
-                                BorderColor="LightGray"
-                                BackgroundColor="White"/>
-                        <Image Source="https://i.pinimg.com/originals/25/ab/cc/25abcc392f1200be96b7629ee208c778.jpg"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Start"
-                               WidthRequest="100"
-                               HeightRequest="100"
-                               Margin="0,-10,0,0"/>
-                    </StackLayout>
+                    
                 </StackLayout>
-                <StackLayout VerticalOptions="Start" Margin="0,20,0,0">
-                    <Label Text="- '동양화'는 동아시아 미술을 총칭하는 포괄적인 개념입니다."
-                            FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="- 1920년 동아일보에 '동양화'라는 표현이 처음 등장했습니다."
-                            FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="- 중국(문인화, 서예)" FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="  일본(우키요에, 고민화)" FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="  한국(서화, 산수화) 등이 대표작" FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="- 작품 속 역사적, 문화적 배경을 이해하면 감상에 도움됩니다." FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                </StackLayout>
-            </StackLayout>
-        </ScrollView>
+            </ScrollView>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

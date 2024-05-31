@@ -3,31 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Artcategory"             
              BackgroundColor="WhiteSmoke">
-    <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Padding="20">
-                <Frame BorderColor="Black"
-                       CornerRadius="5"
-                       Padding="5"
-                       Margin="0,10,0,0"
+    <AbsoluteLayout>
+        <BoxView Color="Beige" 
+                 AbsoluteLayout.LayoutBounds="0, 0, 1, 0.8"
+                 AbsoluteLayout.LayoutFlags="All" />
+
+        <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfODcg/MDAxNzE3MTU1MzQwMDUy.u5J2-aU0K9BDDR6dy2SvGv_73aM9hbLXUtzVLNxCKA8g.Puj0f1KKnq4VszDXA1TGa3VnOq8tsSZLozQM8cTH3UUg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_203035.png?type=w966"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0, 1, 1, 0.2"
+               AbsoluteLayout.LayoutFlags="All" />
+
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="60">
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,30,0,30"
                        HorizontalOptions="Center"
                        VerticalOptions="Start">
-                    <Image Source="https://weekly.chosun.com/news/photo/202005/15747_1.jpg"
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
                            HorizontalOptions="Center"
-                           VerticalOptions="Start"
-                           WidthRequest="250">
-                    </Image>
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMjcg/MDAxNzE3MTg1NjMyNTA3.i6YrM8tWg_cOkMS1F2Fs_AVe3JfdQYhiNPKEJXmvVUcg.MC4nhAUSke0t37OvsSuY80cnm2Y97xEf3EPgGbPuHGMg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_032212.png?type=w966"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start"
+                                   WidthRequest="220">
+                            </Image>
+                        </Frame>
+                    </Frame>
                 </Frame>
-                <Label Text="미술분야"
-                       FontSize="Large"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Start"
-                       Margin="0,10,0,10"/>
                 <StackLayout Orientation="Horizontal"
                              HorizontalOptions="Center"
                              VerticalOptions="Start"
-                             Spacing="15">
+                             Spacing="25">
                     <StackLayout>
                         <Button Text="현대미술"
                                 Clicked="Modernart"
@@ -37,7 +56,7 @@
                                 BackgroundColor="White"
                                 WidthRequest="110"
                                 HeightRequest="40"/>
-                        <Image Source="https://mblogthumb-phinf.pstatic.net/MjAyMTA0MjhfMjI4/MDAxNjE5NjE3MDEzNjEz.IP_glYKRSars6LcNy0BWcQ_r3k18JiwyOZLj7gjAEasg.aEP6TO5tDmNTMy0hDRBxMeC1rRri7G1URxWajfxM6Ugg.JPEG.artephile/Edouard_Manet_Young_Flautist_or_The_Fifer_1866_97x160.5_Orsay.jpg?type=w800"
+                        <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMjg0/MDAxNzE3MTc4MTA0Mjg5.QTjarBBOdIGgbjFUlNyTM8rjULQ-U0-7i7bM_duX71Qg.uLqrst3rUE8YyKAcLfs24Du6OCXejrzrFDOyICZJQlog.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_025410.png?type=w966"
                                HorizontalOptions="Center"
                                VerticalOptions="Start"
                                WidthRequest="100"
@@ -53,12 +72,12 @@
                                 BackgroundColor="White"
                                 WidthRequest="110"
                                 HeightRequest="40"/>
-                        <Image Source="https://mblogthumb-phinf.pstatic.net/MjAyMDA2MTVfMjU4/MDAxNTkyMjAzMDUwNzU0.wOYqPc7Buz-3o92sh-GU_vExiQs2aVm8SiXiG9bt9BQg.eLcKdpyw-6V-cZbSgNU1flyW5iS6tRPxx0GO2LpzSTUg.JPEG.iboattour/%EF%BB%BF%EC%9D%B8%EA%B0%84%EC%9D%98_%EC%95%84%EB%93%A4_%EB%A5%B4%EB%84%A4_%EB%A7%88%EA%B7%B8%EB%A6%AC%ED%8A%B8.jpg?type=w800"
+                        <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTY4/MDAxNzE3MTc5MzI4MDU5.RBaGwLV6P-hHWEYtJDR_HJXRIt4Bu8REpmJdtJfxPL8g.Ey8T4tfjCic0783SM7pRwTYLomRyMJOSUsW06f5hvKcg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_031452.png?type=w966"
                                HorizontalOptions="Center"
                                VerticalOptions="Start"
                                WidthRequest="100"
                                HeightRequest="100"
-                               Margin="0,8,0,0"/>
+                               Margin="0,-5,0,0"/>
                     </StackLayout>
                     <StackLayout>
                         <Button Text="팝아트"
@@ -69,7 +88,7 @@
                                 BackgroundColor="White"
                                 WidthRequest="110"
                                 HeightRequest="40"/>
-                        <Image Source="https://mblogthumb-phinf.pstatic.net/MjAxOTEyMTRfMTcz/MDAxNTc2MjU0NTE4OTE3.uW7EtOoPLVwa9xWgpH9BT8k0jnU2doPZtD-QCpQeqpAg.WFfqSTHYOhNbXsu3Z3OBwbiCMrwUXzyMlXHKuaOCFbQg.JPEG.leemj0711/1576254518156.jpg?type=w800"
+                        <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTE3/MDAxNzE3MTgyMjY1Nzk4.1f953_j9CUVWrdNQRTWv5SmasnbRLx5glak22kxtqoEg.TzuEyc5xWxuugKROo2cFnthhAWNz43yFCkgCVqdI-1kg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_040336.png?type=w966"
                                HorizontalOptions="Center"
                                VerticalOptions="Start"
                                WidthRequest="100"
@@ -77,18 +96,7 @@
                                Margin="0,8,0,0"/>
                     </StackLayout>
                 </StackLayout>
-                <StackLayout VerticalOptions="Start" Margin="0,20,0,0">
-                    <Label Text="- 현대미술은 전통적인 형식에서 벗어나 새로운 시도를 통해 창의적인 표현을 중시합니다. 독창적인 아이디어와 작가의 의도를 이해해보세요."
-                           FontSize="14" HorizontalTextAlignment="Center"/>
-                    <Label Text="- 초현실주의는 무의식의 세계를 탐구하며 꿈과 현실을 넘나드는 이미지를 특징으로 합니다. 숨겨진 상징과 작가의 무의식적 표현을 발견해보세요."
-                           FontSize="14" HorizontalTextAlignment="Center"/>
-                    <Label Text="- 팝아트는 대중문화와 소비사회를 반영하여 일상적인 사물과 이미지를 재해석한 것이 특징입니다. 작품의 당시 사회적 맥락을 이해해보세요." 
-                           FontSize="14" HorizontalTextAlignment="Center"/>
-                    <Label Text="- 현대미술(샘, 넘버 1A)" FontSize="14" HorizontalTextAlignment="Center"/>
-                    <Label Text="  초현실주의(기억의 지속, 이미지의 배반)" FontSize="14" HorizontalTextAlignment="Center"/>
-                    <Label Text="  팝아트(마릴린 딥티크, 키스) 등이 대표작" FontSize="14" HorizontalTextAlignment="Center"/>
-                </StackLayout>
             </StackLayout>
         </ScrollView>
-    </ContentPage.Content>
+    </AbsoluteLayout>
 </ContentPage>

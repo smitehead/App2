@@ -2,65 +2,146 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.ChinaPainting">
     <ContentPage.Content>
-        <StackLayout Padding="20">
-            <!-- 첫 번째 작품 -->
-            <Frame BorderColor="Goldenrod"
-                   BackgroundColor="Goldenrod"
-                   CornerRadius="0"
-                   Padding="2"
-                   Margin="0,20,0,0"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Start">
-                <Frame BorderColor="DarkRed"
-                       BackgroundColor="DarkRed"
+        <ScrollView>
+            <StackLayout Padding="20">
+                <!-- 첫 번째 작품 -->
+                <Frame BorderColor="Goldenrod"
+                       BackgroundColor="Goldenrod"
                        CornerRadius="0"
-                       Padding="5"
+                       Padding="2"
+                       Margin="0,20,0,0"
                        HorizontalOptions="Center"
                        VerticalOptions="Start">
-                    <Frame BorderColor="White"
-                           BackgroundColor="White"
+                    <Frame BorderColor="DarkRed"
+                           BackgroundColor="DarkRed"
                            CornerRadius="0"
-                           Padding="18"
+                           Padding="5"
                            HorizontalOptions="Center"
                            VerticalOptions="Start">
-                        <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Start"
-                                WidthRequest="300">
-                        </Image>
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="300">
+                            </Image>
+                        </Frame>
                     </Frame>
                 </Frame>
-            </Frame>
 
-            <!-- 첫 번째 작품 정보 -->
-            <Label Text="그림 제목"
-                   FontSize="Medium"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"
-                   Margin="0,10,0,0" />
+                <!-- 첫 번째 작품 정보 -->
+                <Label Text="고개지(顧愷之) (344 ~ 406)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="여사잠도(女史箴圖)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="여사가 책을 들고 새로 들어온 측실에게 훈계를 하고 있다. 그림 속의 수 많은 낙관은 왕이 바뀔 때 마다 왕족이 자신의 소유임을 주장하고 진품임을 보증하는 것이다. 여사잠도는 황실 규방 여인들의 품행 문제를 다룬 일종의 권계화(勸戒畵)이다. 이 그림에서 고개지가 사용했던 선(線)의 기법을 춘잠토사식(春蠶吐絲式) 또는 유사묘법(遊絲描法)이라 한다. 이는 필선이 명주실처럼 가늘고 섬세하면서도 생동감이 있어 붙여진 명칭이다. 농담(濃淡)의 색채를 희미한 점철로 처리하는 등 특이한 도칠(塗漆) 방법을 구사하고 있다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
 
-            <Label Text="작가: 작가 이름"
-                   FontSize="Small"
-                   HorizontalOptions="Center"
-                   Margin="0,0,0,5" />
+                <!-- 두 번째 작품 -->
+                <Frame BorderColor="Goldenrod"
+                       BackgroundColor="Goldenrod"
+                       CornerRadius="0"
+                       Padding="2"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DarkRed"
+                           BackgroundColor="DarkRed"
+                           CornerRadius="0"
+                           Padding="5"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="300">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
 
-            <Label Text="그림에 대한 설명 "
-                    FontSize="Small"
-                    LineBreakMode="WordWrap"
-                    WidthRequest="200"
-                    HorizontalTextAlignment="Center"
-                    HorizontalOptions="FillAndExpand"
-                    Margin="0,0,0,20" />
+                <!-- 두 번째 작품 정보 -->
+                <Label Text="고개지(顧愷之) (344 ~ 406)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="낙신부도(洛神賦圖)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="적극적으로 사랑을 표현하는 여신(중앙), 부질없는 걱정으로 갈들하며 앉아 있는 조식의 모습이 그러져 있다. 낙신부도는 젊은 선비 조식曺植(차오 스, 192~232)이 낙수洛水의 선녀 복비宓妃와 사랑에 빠졌으나 결국은 헤어진다는 내용의 그림이다. 위나라의 조식이 쓴 낙신부의 마지막 부분을 묘사한 것이다. 낙신부도는 두루마리 그림으로, 동일한 인물을 이야기의 필요에 따라 여러 번 등장시키는 연속적인 해설 기법을 사용하고 있다. "
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
 
-            <!-- 두 번째 작품 -->
-            <!-- 첫 번째 작품과 동일한 내용 복사 -->
+                <!-- 세 번째 작품 -->
+                <Frame BorderColor="Goldenrod"
+                       BackgroundColor="Goldenrod"
+                       CornerRadius="0"
+                       Padding="2"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DarkRed"
+                           BackgroundColor="DarkRed"
+                           CornerRadius="0"
+                           Padding="5"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="300">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
 
-            <!-- 세 번째 작품 -->
-            <!-- 첫 번째 작품과 동일한 내용 복사 -->
-
-            <!-- 네 번째 작품 -->
-            <!-- 첫 번째 작품과 동일한 내용 복사 -->
-        </StackLayout>
+                <!-- 세 번째 작품 정보 -->
+                <Label Text="장훤(張萱), 주방(周昉) (779-805)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="당궁사녀도(唐宫仕女图)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="여사가 책을 들고 새로 들어온 측실에게 훈계를 하고 있다. 그림 속의 수 많은 낙관은 왕이 바뀔 때 마다 왕족이 자신의 소유임을 주장하고 진품임을 보증하는 것이다. 여사잠도는 황실 규방 여인들의 품행 문제를 다룬 일종의 권계화(勸戒畵)이다. 이 그림에서 고개지가 사용했던 선(線)의 기법을 춘잠토사식(春蠶吐絲式) 또는 유사묘법(遊絲描法)이라 한다. 이는 필선이 명주실처럼 가늘고 섬세하면서도 생동감이 있어 붙여진 명칭이다. 농담(濃淡)의 색채를 희미한 점철로 처리하는 등 특이한 도칠(塗漆) 방법을 구사하고 있다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
-

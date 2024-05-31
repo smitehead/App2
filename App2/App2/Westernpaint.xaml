@@ -3,27 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Westernpaint"
              BackgroundColor="WhiteSmoke">
-    <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Padding="20">
-                <Frame BorderColor="Black"
-                       CornerRadius="5"
-                       Padding="5"
-                       Margin="0,10,0,0"
+    <AbsoluteLayout>
+        <BoxView Color="YellowGreen" 
+                 AbsoluteLayout.LayoutBounds="0, 0, 1, 0.8"
+                 AbsoluteLayout.LayoutFlags="All" />
+
+        <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMjUy/MDAxNzE3MTU1MzQwMDUz.tG2iqY2aE5pv4WjiCEOUIWczqV8CPaVKdtIuabiTCxEg.sJoyUTA6IMKNGJQLqFE-lIfI_0KNcJ3cuEtKYZlTP5wg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_203438.png?type=w966"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0, 1, 1, 0.2"
+               AbsoluteLayout.LayoutFlags="All" />
+
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="60">
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,30,0,30"
                        HorizontalOptions="Center"
                        VerticalOptions="Start">
-                    <Image Source="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMTBfMTYg%2FMDAxNjc2MDE0NjAxMzE1.K007hi2Mz-t_uS_iWDGSVuAQO7vX8kDKC6e7Mj9iRHsg.XQFABl_e4iwITpcaZGk2UgSn1YNwG6Si5u6JhDgurmAg.JPEG.kjher310%2FVincent_van_Gogh_The_Bedroom_Sample.jpg"
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
                            HorizontalOptions="Center"
-                           VerticalOptions="Start"
-                           WidthRequest="250">
-                    </Image>
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfNDgg/MDAxNzE3MTg1NjIxODc5.lIDS6qPMSn0p-PbJHwH_kAhbEYF25wp7u5mqGYzRYKYg.FgAYQNIOpQShfdlh8ymmD_q0I0E18gOSLSmEI5T5dFsg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_230308.png?type=w966"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start"
+                                   WidthRequest="220">
+                            </Image>
+                        </Frame>
+                    </Frame>
                 </Frame>
-                <Label Text="서양화"
-                       FontSize="Large"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Start"
-                       Margin="0,10,0,10"/>
                 <StackLayout Orientation="Horizontal"
                              HorizontalOptions="Center"
                              VerticalOptions="Start"
@@ -35,7 +54,7 @@
                                 TextColor="Black"
                                 BorderColor="LightGray"
                                 BackgroundColor="White"/>
-                        <Image Source="https://lh3.googleusercontent.com/proxy/JfMcXk5wZ6mzfdyLBxpsfjQg98ElSiTn0f_eip-2WjgTCbbtPE0d3h44ZAQOEjigs6v-6pdfwR0O23Az_hQTsSj0WT68"
+                        <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMTM3/MDAxNzE3MTYwNDU0OTcz.Gh5317LxGTuiUwtSTwZvN8EMxUDwhZrdiqsFNmDFxvwg.XSNfd5TP-69faMxACFBxd5OD0MVm1iZJf8esqa3Ow5gg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_220045.png?type=w966"
                                HorizontalOptions="Center"
                                VerticalOptions="Start"
                                WidthRequest="100"
@@ -49,7 +68,7 @@
                                 TextColor="Black"
                                 BorderColor="LightGray"
                                 BackgroundColor="White"/>
-                        <Image Source="https://m.imaeil.com/photos/2009/05/07/2009050714305243188_m.jpg"
+                        <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMjUy/MDAxNzE3MTYyODE3NzQ0.f3WZ4KxAlD-awuSaQ70rCPOOBsA8qPrkaCtt7BM-1gMg.AaGbYsHOaMAUc4nQZNl6H790aG5ND5WQMH1abeF0WpMg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_224003.png?type=w966"
                                HorizontalOptions="Center"
                                VerticalOptions="Start"
                                WidthRequest="100"
@@ -63,7 +82,7 @@
                                 TextColor="Black"
                                 BorderColor="LightGray"
                                 BackgroundColor="White"/>
-                        <Image Source="https://newsimg.sedaily.com/2022/01/24/260ZNU26JH_4.jpg"
+                        <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfNjkg/MDAxNzE3MTc2MDk1ODk2.okh0NQUhXmbnCdXqs_wfQytlqkoUrKVQevD5nHxEiEwg.7hBpjT7QpqRH7UOr_oGH2FaMFa9y-SIylQ9B-TY7Xo4g.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_021853.png?type=w966"
                                HorizontalOptions="Center"
                                VerticalOptions="Start"
                                WidthRequest="100"
@@ -71,24 +90,8 @@
                                Margin="0,8,0,0"/>
                     </StackLayout>
                 </StackLayout>
-                <StackLayout VerticalOptions="Start" Margin="0,30,0,0">
-                    <Label Text="- '서양화'는 유럽을 중심으로 발전해온 다양한 미술 양식을 포함합니다."
-                           FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="- 작품의 구성, 색채, 빛의 표현 등에 주목하여 감상해보세요."
-                           FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="- 인물화(모나리자, 밤의 순찰)" FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="  풍경화(수련, 별이 빛나는 밤)" FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="  추상화(구성 VIII, 게르니카) 등이 대표작" FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                    <Label Text="- 서양화는 각각의 시대와 스타일마다 독특한 아름다움을 지니고 있습니다."
-                           FontSize="14"
-                           HorizontalTextAlignment="Center"/>
-                </StackLayout>
+                
             </StackLayout>
         </ScrollView>
-    </ContentPage.Content>
+    </AbsoluteLayout>
 </ContentPage>
