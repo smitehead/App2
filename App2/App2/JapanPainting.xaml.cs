@@ -10,10 +10,6 @@ namespace App2
         {
             InitializeComponent();
 
-            webView.Source = new UrlWebViewSource
-            {
-                Url = "https://namu.wiki/w/%EC%9A%B0%ED%82%A4%EC%9A%94%EC%97%90",
-            };
         }
     }
 }

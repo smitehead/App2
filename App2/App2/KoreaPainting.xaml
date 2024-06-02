@@ -4,9 +4,35 @@
              x:Class="App2.KoreanPainting">
 
     <ContentPage.Content>
-        <WebView x:Name="webView"
-                 VerticalOptions="FillAndExpand"
-                 HorizontalOptions="FillAndExpand" />
+        <StackLayout>
+            <Frame BorderColor="Goldenrod"
+                       BackgroundColor="Goldenrod"
+                       CornerRadius="0"
+                       Padding="2"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                <Frame BorderColor="DarkRed"
+                           BackgroundColor="DarkRed"
+                           CornerRadius="0"
+                           Padding="5"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                    <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                        <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="300">
+                        </Image>
+                    </Frame>
+                </Frame>
+            </Frame>
+        </StackLayout>
     </ContentPage.Content>
 
 </ContentPage>
