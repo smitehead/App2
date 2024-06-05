@@ -1,12 +1,160 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.ModernArt">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="App2.ModernArt"
+             BackgroundColor="Beige">
+    <AbsoluteLayout>
+        <Label Text="현대미술"
+               TextColor="Black"
+               FontSize="15"
+               AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               BackgroundColor="LightGray"
+               Padding="5"
+               Margin="5" />
+
+        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20">
+                <!-- 첫 번째 작품 -->
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,30,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTI0/MDAxNzE3MTc4Mzc4ODkx.9xZZfZQQh8D2mZO1XLbO8-M-jKmdJbjdTXjqoBDi_5Yg.Y_rbMGIfo8IAspDNQ5qrIIdnL11yjtCBKkwtOhu6Epgg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_025830.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="210">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 첫 번째 작품 정보 -->
+                <Label Text="파블로 피카소(1881.10.25~1973.4.8)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="아비뇽의 처녀들 (1907)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="다섯 명의 여성 누드 모델을 그린 것으로, 이들은 바르셀로나의 유명한 거리인 아비뇽가의 매춘부들이다. 이 작품은 피카소가 아프리카 조각과 원시 예술에 영감을 받아, 인물의 형태를 기하학적으로 단순화하고 왜곡하여 표현한 것이다. 피카소는 전통적인 원근법과 사실주의적인 표현을 버리고, 다양한 시점에서 본 인물의 모습을 한 화면에 결합시켰다. 작품은 두 부분으로 나뉘어 있었는데, 왼쪽의 세 인물은 비교적 부드러운 곡선과 색채로 그려져 있었고, 오른쪽의 두 인물은 날카로운 기하학적 형태와 강렬한 색채로 그려져 있다. 이러한 대조는 피카소의 실험적이고 혁신적인 접근을 보여주고 있다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 두 번째 작품 -->
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMjg0/MDAxNzE3MTc4MTA0Mjg5.QTjarBBOdIGgbjFUlNyTM8rjULQ-U0-7i7bM_duX71Qg.uLqrst3rUE8YyKAcLfs24Du6OCXejrzrFDOyICZJQlog.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_025410.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="190">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 두 번째 작품 정보 -->
+                <Label Text="에두아르 마네 (1832.1.23~1883.4.30)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="피리부는 소년 (1866)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="프랑스 군악대의 소년 피리 연주자를 그린 그림이다. 이 작품은 평면적인 배경과 단순화된 형태, 강렬한 색채 대비를 특징으로 하고 있다. 마네는 전통적인 원근법을 사용하지 않고, 소년을 화면의 전면에 배치하여 강렬한 시각적 인상을 주었다. 이 작품은 당시의 전통적인 회화와는 다른 접근법을 보여주었으며, 색채와 형태를 통해 감정을 직접적으로 전달하려는 마네의 시도를 담고 있었다.“피리부는 소년”은 전통적인 회화 기법에서 벗어나, 색채와 형태를 통해 현대적인 감각을 표현한 작품이었다. 마네의 이러한 시도는 이후 인상주의와 더불어 현대미술의 발전에 큰 영향을 미쳤다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 세 번째 작품 -->
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTcw/MDAxNzE3MTc4NjgwNTU5.CpGSX5amny4BD2hkoNFxVLuT0BdPmBQl5GScUih3kLQg.fAbQ1uYrohXGmC5kQs174JPmOTnyMVP-W1rmDAQh5MQg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_030401.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="210">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 세 번째 작품 정보 -->
+                <Label Text="에드바르크 뭉크 (1863.12.12~1944.1.23)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="절규 (1893)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="뭉크가 노르웨이의 피오르드를 배경으로 한 산책 중 느낀 강렬한 감정을 표현한 작품이다. 그림 속 인물은 고통에 찬 표정으로 입을 크게 벌리고 있으며, 배경의 하늘과 땅은 소용돌이치는 듯한 강렬한 색채와 선으로 묘사되어 있다. 이는 인물의 내면적 혼란과 공포를 시각적으로 전달하고 있다. 인물은 왜곡되고 비현실적인 형태로 그려져 있으며, 배경의 강렬한 색채와 대조를 이루고 있다. 뭉크는 이 작품을 통해 인간의 내면 깊숙한 감정과 불안, 고통을 표현하고자 했으며, 이는 당시의 사회적 불안과 개인적 고뇌를 반영하고 있다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>

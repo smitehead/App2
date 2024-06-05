@@ -1,23 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Orientalpainting">
+             x:Class="App2.Orientalpainting"
+             BackgroundColor="CadetBlue">
     <ContentPage.Content>
         <AbsoluteLayout>
             <BoxView Color="FloralWhite" 
-                     AbsoluteLayout.LayoutBounds="0, 0, 1, 0.8"
+                     AbsoluteLayout.LayoutBounds="0, 0.4, 1, 0.9"
                      AbsoluteLayout.LayoutFlags="All" />
+
+            <Label Text="동양화"
+                   TextColor="Black"
+                   FontSize="15"
+                   Margin="3"
+                   AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+                   AbsoluteLayout.LayoutFlags="PositionProportional" />
 
             <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfNjQg/MDAxNzE3MTMyMDkwOTEx.fT__N9o5hAxLEAK8P80osRy4JxShHPujCl_iKlhvW1Ag.7tVgRwNar-RLhi22FECD_55aCNqnBpnQ6PScXzQDkf8g.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_140735.png?type=w966"
-       Aspect="AspectFill"
-                     AbsoluteLayout.LayoutBounds="0, 1, 1, 0.2"
-                     AbsoluteLayout.LayoutFlags="All" />
+                   Aspect="AspectFill"
+                   AbsoluteLayout.LayoutBounds="0, 1, 1, 0.2"
+                   AbsoluteLayout.LayoutFlags="All" />
 
             <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
-                        AbsoluteLayout.LayoutFlags="All">
-
-                <StackLayout Padding="60">
-
+                        AbsoluteLayout.LayoutFlags="All"
+                        Margin="0,70,0,0">
+                <StackLayout>
                     <Frame BorderColor="Goldenrod"
                            BackgroundColor="Goldenrod"
                            CornerRadius="0"
@@ -40,7 +47,7 @@
                                 <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTU1/MDAxNzE3MTg1NjE1NTU4.c0fSUz5OFXGsERYCWjE0jyFVcTHF7iXZNG2fXqiwlLog.cceNzbh9T4RE49rnil2uVurtXe0rH4dHGhDOntgeV-Eg.PNG/KakaoTalk_20240531_223556269_11.png?type=w966"
                                        HorizontalOptions="Center"
                                        VerticalOptions="Start"
-                                       WidthRequest="220">
+                                       WidthRequest="190">
                                 </Image>
                             </Frame>
                         </Frame>
@@ -48,52 +55,100 @@
 
                     <StackLayout Orientation="Horizontal"
                                  HorizontalOptions="Center"
-                                 VerticalOptions="Start"
-                                 Spacing="25">
-                        <StackLayout>
+                                 VerticalOptions="Center">
+                        <StackLayout Margin="10,0"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center">
                             <Button Text="중국화"
+                                    FontSize="Medium"
+                                    TextColor="Black"
+                                    BackgroundColor="GhostWhite"
+                                    WidthRequest="90"
+                                    HeightRequest="45"
                                     Clicked="Cprinting"
-                                    FontSize="Small"
-                                    TextColor="Black"
                                     BorderColor="LightGray"
-                                    BackgroundColor="White"/>
-                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfODAg/MDAxNzE3MTg1MDM3NTky.G_oF0-PnXrz3bTYV4B5XWshe14CyD4bKBTlLqz4L4pkg.jPDsmyNcQFvbUQrjKhN1QefF_DnrReejBvu8xevyHJIg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_044756.png?type=w966"
+                                    BorderWidth="1"
+                                    CornerRadius="20"/>
+                            <Frame BorderColor="LightGray"
+                                   CornerRadius="10"
+                                   Padding="0"
+                                   HasShadow="False"
+                                   Margin="0,10,0,0"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start"
+                                   WidthRequest="100"
+                                   HeightRequest="100">
+                                <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfODAg/MDAxNzE3MTg1MDM3NTky.G_oF0-PnXrz3bTYV4B5XWshe14CyD4bKBTlLqz4L4pkg.jPDsmyNcQFvbUQrjKhN1QefF_DnrReejBvu8xevyHJIg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_044756.png?type=w966"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Start"
                                    WidthRequest="100"
                                    HeightRequest="100"
-                                   Margin="0,-14,0,0"/>
+                                   Aspect="AspectFill"/>
+                            </Frame>
                         </StackLayout>
-                        <StackLayout>
+
+                        <StackLayout Margin="10,0"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center">
                             <Button Text="일본화"
+                                    FontSize="Medium"
+                                    TextColor="Black"
+                                    BackgroundColor="GhostWhite"
+                                    WidthRequest="90"
+                                    HeightRequest="45"
                                     Clicked="Jprinting"
-                                    FontSize="Small"
-                                    TextColor="Black"
                                     BorderColor="LightGray"
-                                    BackgroundColor="White"/>
-                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfNTUg/MDAxNzE3MTU4NzM5NTE1.LGatdekNew3qJiL8TZKH8qvE-qeHVHFuwcgubm4sUiQg.-ZR4a3dOoCv2JllS264EKCxjAhtj41p60cxdckrmHVAg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_205958.png?type=w966"
+                                    BorderWidth="1"
+                                    CornerRadius="20"/>
+                            <Frame BorderColor="LightGray"
+                                   CornerRadius="10"
+                                   Padding="0"
+                                   HasShadow="False"
+                                   Margin="0,10,0,0"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Start"
                                    WidthRequest="100"
-                                   HeightRequest="100"
-                                   Margin="0,-10,0,0"/>
+                                   HeightRequest="100">
+                                <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfNTUg/MDAxNzE3MTU4NzM5NTE1.LGatdekNew3qJiL8TZKH8qvE-qeHVHFuwcgubm4sUiQg.-ZR4a3dOoCv2JllS264EKCxjAhtj41p60cxdckrmHVAg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_205958.png?type=w966"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       WidthRequest="100"
+                                       HeightRequest="100"
+                                       Aspect="AspectFill"/>
+                            </Frame>
                         </StackLayout>
-                        <StackLayout>
+
+                        <StackLayout Margin="10,0"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center">
                             <Button Text="한국화"
-                                    Clicked="Kprinting"
-                                    FontSize="Small"
+                                    FontSize="Medium"
                                     TextColor="Black"
+                                    BackgroundColor="GhostWhite"
+                                    WidthRequest="90"
+                                    HeightRequest="45"
+                                    Clicked="Kprinting"
                                     BorderColor="LightGray"
-                                    BackgroundColor="White"/>
-                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMjcx/MDAxNzE3MTYwODA4NjQ2.sxd9NRwRcZ4u51nLT8Fpbv_fvi34zCnMhLdoR390Zz4g.lZvnMbySgXYeU3caoTC_kATJKWeshKISddyMtZ1SSyQg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_220634.png?type=w966"
+                                    BorderWidth="1"
+                                    CornerRadius="20"/>
+                            <Frame BorderColor="LightGray"
+                                   CornerRadius="10"
+                                   Padding="0"
+                                   HasShadow="False"
+                                   Margin="0,10,0,0"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start"
+                                   WidthRequest="100"
+                                   HeightRequest="100">
+                                <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMjk4/MDAxNzE3MTYwMjczNzU1.7f_5MVI0fPVlaklRmb8GmVbv3lshchULzmvisApnBQ8g.vRSWdLqgLCmwIXOVn58CkWCdxoCNihfOxP6bkGH93fgg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_215247.png?type=w966"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Start"
                                    WidthRequest="100"
                                    HeightRequest="100"
-                                   Margin="0,-10,0,0"/>
+                                   Aspect="AspectFill"/>
+                            </Frame>
                         </StackLayout>
                     </StackLayout>
-                    
                 </StackLayout>
             </ScrollView>
         </AbsoluteLayout>

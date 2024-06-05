@@ -1,12 +1,161 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.LandscapeArt">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="App2.LandscapeArt"             
+             BackgroundColor="Gainsboro">
+    <AbsoluteLayout>
+        <!-- "동양화" 라벨을 오른쪽 위에 추가 -->
+        <Label Text="풍경화"
+               TextColor="Black"
+               FontSize="15"
+               AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               BackgroundColor="LightGray"
+               Padding="5"
+               Margin="5" />
+
+        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20">
+                <!-- 첫 번째 작품 -->
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,30,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMjUy/MDAxNzE3MTYyODE3NzQ0.f3WZ4KxAlD-awuSaQ70rCPOOBsA8qPrkaCtt7BM-1gMg.AaGbYsHOaMAUc4nQZNl6H790aG5ND5WQMH1abeF0WpMg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_224003.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="210">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 첫 번째 작품 정보 -->
+                <Label Text="조르주 쇠라 (1859.12.2~1891.3.29)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="그랑자트섬의 일요일 오후 (1884)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="이 작품은 점묘법으로 화면을 꼼꼼하게 채웠으며, 원근법과 균형감 있는 구도가 잘 나타나고 있다. 프랑스 파리의 센 강 주변에 있는 그랑드 자트 섬에서 여유롭게 일요일 오후를 보내고 있는 40여 명의 파리 시민들이 화면을 채우고 있다. 인물들은 얼어붙은 듯 움직임이 보이지 않으며 무표정하게 그려져 있어 배경의 밝은 분위기와 상반되는 차가운 느낌을 준다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 두 번째 작품 -->
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfNDAg/MDAxNzE3MTYzNDc4NjQ2.MfNNJOq1VEyosa3Gq2a2c_nB6fjJYJ-oCEqCZElXqEQg.eP-t4_SDbjCNXHs8JW22Lg8bdbD9mCjPgbVcbvm4TWIg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_225057.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="170">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 두 번째 작품 정보 -->
+                <Label Text="클로드모네(1840.11.14~1926.12.5)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="인상, 해돋이(1872)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="해가 막 솟아오르는 순간, 불그스름한 해의 기운이 쓰며들어 강물이며, 사람이며, 건물 모두를 붉게 물들어가고 있다. 모네는 해가 막 솟아오르는 순간의 인상을 순식간에 그려 나타내었다. 희뿌연 아침 안개와 빛으로 물드는 일출의 바다는 마치 세포 분열처럼 빠른 변화를 거듭하고 있다. 풍경의 원형에 가까운 형태의 창조보다 빛에 의해 시시각각 달라지는 사물의 아름다움을 찾고 잡아낸 것이다. 모네는 미리 화구를 준비했다가 해가 비칠 때 잽싸게 그리고, 이슬이 마르면 접었다가 다음날 그리기를 계속하였다. 진동하는 빛의 미세한 변주를 붙잡기 위해, 풍경 묘사가 아닌 풍경의 인상을 그리기 위해 빛을 따라가며 그림을 그렸다. 세잔은 말했다.“모네가 가진 것을 눈밖에 없다. 그러나 얼마나 위대한 눈인가!”"
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 세 번째 작품 -->
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMTU4/MDAxNzE3MTY0Mjk3MDY5.SZygkcOjmLdfRCpQJTSByIXwA0B9hn-Xjew0LPI4Wi0g.SM_7KOukm9jm-Cyx4ObtX3o_GodTi9BGwkvR6B8GsK0g.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_230439.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="250">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 세 번째 작품 정보 -->
+                <Label Text="빈센트 반 고흐(1853.3.30~1890.7.29)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="별이 빛나는 밤에 (1889)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="이 작품은 반 고흐가 요양원에서 창문을 통해 본 풍경을 단 3일만에 그린 것이었다. 작품 속 밤하늘에는 11개의 별이 있다. 반 고흐는 기독교 신자로, 11개의 별은 성경 창세기 37장 9절에 나오는 야곱의 11명의 아들을 상징하고 있었다. 이는 고난과 역경을 이겨내면 행복한 미래가 찾아올 것이라는 반 고흐의 희망을 담고 있었다. 별이 빛나는 밤에는 단순한 풍경화가 아닌, 반 고흐의 고난과 희망을 표현한 작품이다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>

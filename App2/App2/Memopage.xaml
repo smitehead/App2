@@ -8,14 +8,25 @@
              Padding="20">
 
     <StackLayout>
-        <Label Text="감상문"
-               TextColor="#fff"
-               FontSize="20"
-               FontAttributes="Bold"
-               Padding="10"
-               BackgroundColor="#4097e9"
-               HorizontalOptions="Fill"
-               HorizontalTextAlignment="Center"/>
+        <!-- 상단 이미지 -->
+        <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDVfMTc1/MDAxNzE3NTUxNTI5MjQ3.lbUGkQE1OoiFBrDCWM_4qfpiKOv9EAjbecznErOVdJ8g.pw03tUVi7S31PD9vxSBX2x5hXzwutEPvAETpr-CIrPIg.PNG/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2024-06-05_103840.png?type=w966" 
+               Aspect="AspectFit"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+        <Frame BackgroundColor="#4097e9"
+               CornerRadius="30"
+               Padding="0"
+               Margin="90,0">
+            <Label Text="나만의 감상문"
+                   TextColor="#fff"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   Padding="10"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+        </Frame>
+
         <StackLayout VerticalOptions="StartAndExpand">
             <ListView x:Name="lv_todo" HasUnevenRows="True">
                 <ListView.ItemTemplate>
@@ -51,23 +62,27 @@
                      Padding="10"
                      Margin="0, 20, 0, 0"
                      Spacing="0">
-            <Label Text="New To-Do"
+            <Label Text="한줄 감상평"
                    TextColor="#4097e9"
                    FontAttributes="Bold"
                    FontSize="17"/>
             <StackLayout Orientation="Vertical">
                 <Entry x:Name="et_todo_new"
                        TextColor="#1582e9"
-                       Placeholder="Enter new To-Do."/>
-                <Button x:Name="btn_todo_new"
-                        Text="save new to-do"
-                        BackgroundColor="#d85050"
-                        TextColor="#fff"
-                        FontSize="17"
-                        FontAttributes="Bold"
-                        Clicked="btn_todo_new_Clicked"/>
+                       Placeholder="감상평을 입력하세요."/>
+                <Frame CornerRadius="10"
+                       BackgroundColor="#d85050"
+                       Padding="0"
+                       Margin="0,10,0,0">
+                    <Button x:Name="btn_todo_new"
+                            Text="저장"
+                            BackgroundColor="#d85050"
+                            TextColor="#fff"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            Clicked="btn_todo_new_Clicked"/>
+                </Frame>
             </StackLayout>
         </StackLayout>
     </StackLayout>
-
 </ContentPage>

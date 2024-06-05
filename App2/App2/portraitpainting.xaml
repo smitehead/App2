@@ -1,12 +1,161 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.PortraitPainting">
+             x:Class="App2.PortraitPainting"             
+             BackgroundColor="Gainsboro">
+    <AbsoluteLayout>
+        <!-- "동양화" 라벨을 오른쪽 위에 추가 -->
+        <Label Text="인물화"
+               TextColor="Black"
+               FontSize="15"
+               AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               BackgroundColor="LightGray"
+               Padding="5"
+               Margin="5" />
 
-    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <WebView x:Name="webView"
-                 VerticalOptions="FillAndExpand"
-                 HorizontalOptions="FillAndExpand" />
-    </StackLayout>
+        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20">
+                <!-- 첫 번째 작품 -->
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,30,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMjQ4/MDAxNzE3MTYxMjgzODIy.YQVSJDUoEKKdSZbp0JgWY7uqEXr5w-uYbr3hel3eiU8g.uO2DJbaP5hwyGIKf6KVFL2oCGzHPKe7TgtWVuaukRJkg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_220935.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="220">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
 
+                <!-- 첫 번째 작품 정보 -->
+                <Label Text="요하네스 베르메르(1632.10.31~1675.12.15)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="진주 귀고리를 한 소녀(1665)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="진주 귀걸이를 한 소녀의 담담한 눈빛과 살며시 벌어진 입술은 신비감을 불러일으키며 그녀의 생각과 감정에 대한 추측을 불러일으킨다. 빛과 그림자의 섬세한 터치가 그녀의 얼굴을 비추고 진주 귀걸이를 강조한다. 또한 빛나는 진주를 통해 순수함과 우아함을 표현하며 그림에 대한 매력이 올라가도록 했다. 두상을 부각시켜 그린 바로크시대의 초상화를 일컫는 트로니의 일종이다. 당대에는 이런 트로니가 많이 제작되었고, 주로 화가들이 연습 삼아 상상의 인물을 그리는 경우가 많았는데 이 그림도 이 중 하나다. 그러나 후술할 특징으로 인하여 많은 이들의 상상력을 불러 일으키는 그림으로 평가받는다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 두 번째 작품 -->
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfNSAg/MDAxNzE3MTYxOTAzMDAy.1XH-boqzHlA4ZwdLSdKtoY-GOaaHh-n4EdzjzCXlVqEg.wthA3LaVPXHxvdYz3R-dQ4fdQauazCgWJjv8Oz6OT0kg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_222443.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="120">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 두 번째 작품 정보 -->
+                <Label Text="빈센트 반 고흐(1853.3.30~1890.7.29)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="귀에 붕대를 감은  자화상(1853~1890)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="고흐는 1888년 크리스마스를 이틀 앞 둔 채 자신의 귀를 잘라 버렸다. 1889년에 정신병원에서 퇴원한 고흐는 바로 이 작품을 그렸다, 고흐는 왼쪽 귀를 잘랐다고 하지만, 그림 속에서 오른쪽 귀가 잘린 채 그려진 이유는 고흐가 자신의 얼굴을 거울을 보고 그렸기 때문에 좌우가 반대되어 나타난 것이다. 강한 빛 아래서 자신과 침착하게 대면하고 있는 있는 고흐는 그가 아직 훌륭하게 살아 있음을 주장하는 듯하다. 고흐 왈“화가이기 때문에 겪은 발작이었기를 바란다. 하루하루 내 머리는 평온을 회복하고 있다”이 그림은 무엇인가를 이야기하는 것이 아니라 새로운 자신감을 나타내는 것이다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 세 번째 작품 -->
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMTM3/MDAxNzE3MTYwNDU0OTcz.Gh5317LxGTuiUwtSTwZvN8EMxUDwhZrdiqsFNmDFxvwg.XSNfd5TP-69faMxACFBxd5OD0MVm1iZJf8esqa3Ow5gg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_220045.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="210">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 세 번째 작품 정보 -->
+                <Label Text="레나르도 다 빈치(1452.4.15~1519.5.2)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="모나리자(1503~1517)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="인류 역사상 가장 유명한 그림이며 세상에 가장 많이 그리고 널리 알려진 그림이라는 유명세를 지니고 있지만 정작 이 작품에 대해 정확히 알려진 것은 거의 없다. [모나]는 유부녀 이름 앞에 붙이는 이탈리아어 경칭이고,“리자”는 초상화의 모델이 된 여인의 이름이다. 즉, 한국어로 하면“리자 여사”라는 뜻이 된다. 이탈리아와 프랑스에서는 라 조콘다라 하는데 이는“조콘도의 부인”또는“명랑한 여자”,“웃고 있는 여자”라는 뜻이다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>

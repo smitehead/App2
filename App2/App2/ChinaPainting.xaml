@@ -1,15 +1,28 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.ChinaPainting">
-    <ContentPage.Content>
-        <ScrollView>
+             x:Class="App2.ChinaPainting"
+             BackgroundColor="FloralWhite">
+    <AbsoluteLayout>
+        <!-- "동양화" 라벨을 오른쪽 위에 추가 -->
+        <Label Text="중국화"
+               TextColor="Black"
+               FontSize="15"
+               AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               BackgroundColor="LightGray"
+               Padding="5"
+               Margin="5" />
+
+        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
             <StackLayout Padding="20">
                 <!-- 첫 번째 작품 -->
                 <Frame BorderColor="Goldenrod"
                        BackgroundColor="Goldenrod"
                        CornerRadius="0"
-                       Padding="2"
-                       Margin="0,20,0,0"
+                       Padding="1"
+                       Margin="0,30,0,0"
                        HorizontalOptions="Center"
                        VerticalOptions="Start">
                     <Frame BorderColor="DarkRed"
@@ -24,26 +37,26 @@
                                Padding="18"
                                HorizontalOptions="Center"
                                VerticalOptions="Start">
-                            <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfODAg/MDAxNzE3MTg1MDM3NTky.G_oF0-PnXrz3bTYV4B5XWshe14CyD4bKBTlLqz4L4pkg.jPDsmyNcQFvbUQrjKhN1QefF_DnrReejBvu8xevyHJIg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_044756.png?type=w966"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Start"
-                                    WidthRequest="300">
+                                    WidthRequest="230">
                             </Image>
                         </Frame>
                     </Frame>
                 </Frame>
 
                 <!-- 첫 번째 작품 정보 -->
-                <Label Text="고개지(顧愷之) (344 ~ 406)"
+                <Label Text="구영(仇英) (1494~1552)"
                        FontSize="Small"
                        HorizontalOptions="Center"
                        Margin="0,10,0,0" />
-                <Label Text="여사잠도(女史箴圖)"
+                <Label Text="한궁춘효도(汉宫春晓图)"
                        FontSize="Medium"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
                        Margin="0,0,0,5" />
-                <Label Text="여사가 책을 들고 새로 들어온 측실에게 훈계를 하고 있다. 그림 속의 수 많은 낙관은 왕이 바뀔 때 마다 왕족이 자신의 소유임을 주장하고 진품임을 보증하는 것이다. 여사잠도는 황실 규방 여인들의 품행 문제를 다룬 일종의 권계화(勸戒畵)이다. 이 그림에서 고개지가 사용했던 선(線)의 기법을 춘잠토사식(春蠶吐絲式) 또는 유사묘법(遊絲描法)이라 한다. 이는 필선이 명주실처럼 가늘고 섬세하면서도 생동감이 있어 붙여진 명칭이다. 농담(濃淡)의 색채를 희미한 점철로 처리하는 등 특이한 도칠(塗漆) 방법을 구사하고 있다."
+                <Label Text="명나라 화가인 구영이 그린 진채 미인도로, 중국 인물화의 전통적 소재인 궁중 비빈의 일상을 표현한 작품이다. 이 작품은 섬세한 표현과 아름다운 색감으로 궁중 비빈들의 일상생활을 생동감 있고 화려하게 묘사했다. 그들의 행복한 모습은 봄의 도래와 함께 풍요로운 미래를 상징한다."
                        FontSize="Small"
                        LineBreakMode="WordWrap"
                        WidthRequest="400"
@@ -54,7 +67,7 @@
                 <Frame BorderColor="Goldenrod"
                        BackgroundColor="Goldenrod"
                        CornerRadius="0"
-                       Padding="2"
+                       Padding="1"
                        Margin="0,20,0,0"
                        HorizontalOptions="Center"
                        VerticalOptions="Start">
@@ -70,26 +83,26 @@
                                Padding="18"
                                HorizontalOptions="Center"
                                VerticalOptions="Start">
-                            <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMjAg/MDAxNzE3MTg0NDU2NDA4.vXkA9x4bNlEe60HDPVbXijY6zDM0WxY18ApMPoyB9Sgg._HdmIgIkq-5TZZQKL4JV2hRV8wPDSS_ug5ubUX2M5b4g.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_043131.png?type=w966"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Start"
-                                    WidthRequest="300">
+                                    WidthRequest="250">
                             </Image>
                         </Frame>
                     </Frame>
                 </Frame>
 
                 <!-- 두 번째 작품 정보 -->
-                <Label Text="고개지(顧愷之) (344 ~ 406)"
+                <Label Text="한황(韓滉) (723~787)"
                        FontSize="Small"
                        HorizontalOptions="Center"
                        Margin="0,10,0,0" />
-                <Label Text="낙신부도(洛神賦圖)"
+                <Label Text="오우도(五牛圖)"
                        FontSize="Medium"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
                        Margin="0,0,0,5" />
-                <Label Text="적극적으로 사랑을 표현하는 여신(중앙), 부질없는 걱정으로 갈들하며 앉아 있는 조식의 모습이 그러져 있다. 낙신부도는 젊은 선비 조식曺植(차오 스, 192~232)이 낙수洛水의 선녀 복비宓妃와 사랑에 빠졌으나 결국은 헤어진다는 내용의 그림이다. 위나라의 조식이 쓴 낙신부의 마지막 부분을 묘사한 것이다. 낙신부도는 두루마리 그림으로, 동일한 인물을 이야기의 필요에 따라 여러 번 등장시키는 연속적인 해설 기법을 사용하고 있다. "
+                <Label Text="이 그림은 실제를 중요시하고 고생도 마다 않는 불굴의 정신면모를 잘 드러내고 있다. 섬세한 필치, 생동감 넘치게 묘사된 소들이 마치 그림 밖으로 뛰쳐나올 듯한 기세다. 중국 고대 작품 중 오늘날까지 존재하는 대부분이 새.꽃. 인물이었던 점을 감안하면 이 그림은 소를 화폭 속으로 끌어들여 그 예술적 가치가 뛰어나다."
                        FontSize="Small"
                        LineBreakMode="WordWrap"
                        WidthRequest="400"
@@ -100,7 +113,7 @@
                 <Frame BorderColor="Goldenrod"
                        BackgroundColor="Goldenrod"
                        CornerRadius="0"
-                       Padding="2"
+                       Padding="1"
                        Margin="0,20,0,0"
                        HorizontalOptions="Center"
                        VerticalOptions="Start">
@@ -116,26 +129,26 @@
                                Padding="18"
                                HorizontalOptions="Center"
                                VerticalOptions="Start">
-                            <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTgy/MDAxNzE3MTg0NDYzMTI5.0RELpDWDvd6cNtUJSise9xyya6woBBLusxsCWerI0hMg.zlybxdBMgujatySgSOhaql7d8chUJeqMHJ9_BLwVkdMg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_043742.png?type=w966"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Start"
-                                    WidthRequest="300">
+                                    WidthRequest="260">
                             </Image>
                         </Frame>
                     </Frame>
                 </Frame>
 
                 <!-- 세 번째 작품 정보 -->
-                <Label Text="장훤(張萱), 주방(周昉) (779-805)"
+                <Label Text="냥세녕(郎世宁) (1688-1766)"
                        FontSize="Small"
                        HorizontalOptions="Center"
                        Margin="0,10,0,0" />
-                <Label Text="당궁사녀도(唐宫仕女图)"
+                <Label Text="백준도(百骏图)"
                        FontSize="Medium"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
                        Margin="0,0,0,5" />
-                <Label Text="여사가 책을 들고 새로 들어온 측실에게 훈계를 하고 있다. 그림 속의 수 많은 낙관은 왕이 바뀔 때 마다 왕족이 자신의 소유임을 주장하고 진품임을 보증하는 것이다. 여사잠도는 황실 규방 여인들의 품행 문제를 다룬 일종의 권계화(勸戒畵)이다. 이 그림에서 고개지가 사용했던 선(線)의 기법을 춘잠토사식(春蠶吐絲式) 또는 유사묘법(遊絲描法)이라 한다. 이는 필선이 명주실처럼 가늘고 섬세하면서도 생동감이 있어 붙여진 명칭이다. 농담(濃淡)의 색채를 희미한 점철로 처리하는 등 특이한 도칠(塗漆) 방법을 구사하고 있다."
+                <Label Text="중국의 말들을 다양한 자세와 우아한 동작으로 그려냈다. 말은 중국에서 옛날부터 귀한 동물로 간주되었고, 특히 백 말은 풍요와 행운을 상징하는 중요한 상징물이었다. 이 작품은 중국의 전통적인 예술 기법인 '백준'이라는 말의 다양성과 아름다움을 잘 표현하고 있다. 냥세녕은 이 작품을 통해 중국의 말에 대한 애정과 존경을 표현하며, 중국의 전통 문화와 예술에 대한 그의 열정을 보여주었다."
                        FontSize="Small"
                        LineBreakMode="WordWrap"
                        WidthRequest="400"
@@ -143,5 +156,5 @@
                        Margin="0,0,0,20" />
             </StackLayout>
         </ScrollView>
-    </ContentPage.Content>
+    </AbsoluteLayout>
 </ContentPage>

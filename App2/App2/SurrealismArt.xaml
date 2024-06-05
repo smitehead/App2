@@ -1,12 +1,160 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.SurrealismArt">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="App2.SurrealismArt"
+             BackgroundColor="Beige">
+    <AbsoluteLayout>
+        <Label Text="초현실주의"
+               TextColor="Black"
+               FontSize="15"
+               AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               BackgroundColor="LightGray"
+               Padding="5"
+               Margin="5" />
+
+        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20">
+                <!-- 첫 번째 작품 -->
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,30,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTY4/MDAxNzE3MTc5MzI4MDU5.RBaGwLV6P-hHWEYtJDR_HJXRIt4Bu8REpmJdtJfxPL8g.Ey8T4tfjCic0783SM7pRwTYLomRyMJOSUsW06f5hvKcg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_031452.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="240">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 첫 번째 작품 정보 -->
+                <Label Text="살바도르 달리(1904.5.11~1989.1.23)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="기억의 지속(1931)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="시계들은 부드럽게 녹아내리며, 정적인 풍경에 흐름과 변화를 부여한다. 시계들은 시간의 순환성과 변동성을 상징하며, 인간의 삶과 시간의 무의식적 경험을 표현한다. 배경에는 강렬한 파노라마와 바위들이 그려져 있으며, 이는 달리의 카타르시스와 무의식적 세계를 보여준다. 작품에는 달리의 두려움과 불안, 현실과 꿈의 경계에 대한 탐구가 담겨 있다. 시계들의 녹는 모습은 시간의 상대성과 불확실성을 강조하며, 달리의 놀라운 상상력과 창의성을 보여준다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 두 번째 작품 -->
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMjYx/MDAxNzE3MTgxMzAyMDI1.GCCN8lfNTO0g-1fp1sgO0Q7Yr7vva3ZWlr4Ezo3YyfEg.4wjJyJDOJu0wXUbqvTQ_k-oTw9b6y87Qcmm9Efc6x3Ug.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_034248.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="240">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 두 번째 작품 정보 -->
+                <Label Text="폴 델보 (18979.23~1994.7.20)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="잠자는 비너스 (1994)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="여성이 몽환적인 풍경 속에서 잠들어 있는 모습을 보여준다. 여성은 부드럽고 우아한 자세로 누워있으며, 그 주변에는 고대적인 건축물과 기괴한 형상들이 나타나 있다. 이러한 요소들은 현실과 꿈의 경계를 모호하게 만든다. 이 작품은 관람객들에게 여성의 내면 세계와 더불어 현실과 비현실의 경계를 탐험하도록 격려한다. 또한, 델보의 작품은 여성의 정신적인 측면을 탐구하면서, 우리의 생각과 감정에 대해 다시 생각하게 한다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 세 번째 작품 -->
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMjIy/MDAxNzE3MTc5NzYzMDY4.doShE0iF33cuucvd5ur6r589yHku9c2_APOZ5xb57oAg.bR-FdQ5B9_bLCZ__OlNJY7EkWmpxNJYDmiIXqQ6B_3Yg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_032027.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="150">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 세 번째 작품 정보 -->
+                <Label Text="르네 마그리티 (1898.11.21~1967.8.15)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="피레네산맥의 성 (1959)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="거대한 바위가 중력을 거스르며 바위 위에 무중력으로 떠 있다. 이 바위는 피레네산맥에서 온 것인데 그 위에는 견고한 성이 자리 잡고 있다. 견고한 성채는 단단한 지상에 뿌리를 박고 있어야 안전할 텐데 지탱하는 바위는 풍선 마냥 하늘을 떠 있어 무언가 뒤죽박죽 앞뒤가 맞지 않은 모습이다. 이는 일반적으로 바위가 갖는 속성인 무거움, 육중함을 공중부양으로 비틀어버린 것이다. 우리의 고정 관념을 깨어버리고자 하는 의도 속에 바다 위에 거대한 바위 성채를 띄워 놓은 것이다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>

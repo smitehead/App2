@@ -16,12 +16,12 @@
                 <!-- 질문1 -->
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
-                        <Label Text="Q1: 내용을 입력하시오"
+                        <Label Text="Q1: 동양화란 무엇인가요?"
                                FontSize="Small"
                                FontAttributes="Bold"
                                TextColor="Black"
                                Margin="0,0,0,5"/>
-                        <Label Text="A1: 내용을 입력하시오"
+                        <Label Text="A1: '동양화'는 동아시아 미술을 총칭하는 포괄적인 개념입니다. 1920년 동아일보에 '동양화'라는 표현이 처음 등장했습니다."
                                FontSize="16"
                                TextColor="Black"/>
                     </StackLayout>
@@ -30,12 +30,12 @@
                 <!-- 질문2 -->
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
-                        <Label Text="Q2: 내용을 입력하시오"
+                        <Label Text="Q2: 추천하는 동양화는 무엇인가요?"
                                FontSize="Small"
                                FontAttributes="Bold"
                                TextColor="Black"
                                Margin="0,0,0,5"/>
-                        <Label Text="A2: 내용을 입력하시오"
+                        <Label Text="A2: 중국화(문인화, 서예), 일본화(우키요에, 고민화), 한국(서화, 산수화) 등이 대표작입니다."
                                FontSize="16"
                                TextColor="Black"/>
                     </StackLayout>
@@ -44,12 +44,12 @@
                 <!-- 질문3 -->
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
-                        <Label Text="Q3: 내용을 입력하시오"
+                        <Label Text="Q3: 동양화를 즐기는 방법은 무엇인가요?"
                                FontSize="Small"
                                FontAttributes="Bold"
                                TextColor="Black"
                                Margin="0,0,0,5"/>
-                        <Label Text="A3: 내용을 입력하시오"
+                        <Label Text="A3: 작품 속 역사적, 문화적 배경을 이해하면 감상에 도움됩니다."
                                FontSize="16"
                                TextColor="Black"/>
                     </StackLayout>
@@ -58,12 +58,12 @@
                 <!-- 질문4 -->
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
-                        <Label Text="Q4: 내용을 입력하시오"
+                        <Label Text="Q4: 서양화란 무엇인가요?"
                                FontSize="Small"
                                FontAttributes="Bold"
                                TextColor="Black"
                                Margin="0,0,0,5"/>
-                        <Label Text="A4: 내용을 입력하시오"
+                        <Label Text="A4:  '서양화'는 유럽을 중심으로 발전해온 다양한 미술 양식을 포함합니다."
                                FontSize="16"
                                TextColor="Black"/>
                     </StackLayout>
@@ -72,12 +72,12 @@
                 <!-- 질문5 -->
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
-                        <Label Text="Q5: 내용을 입력하시오"
+                        <Label Text="Q5: 추천하는 서양화는 무엇인가요?"
                                FontSize="Small"
                                FontAttributes="Bold"
                                TextColor="Black"
                                Margin="0,0,0,5"/>
-                        <Label Text="A5: 내용을 입력하시오"
+                        <Label Text="A5: 인물화(모나리자, 밤의 순찰), 풍경화(수련, 별이 빛나는 밤), 추상화(구성 VIII, 게르니카) 등이 대표작입니다."
                                FontSize="16"
                                TextColor="Black"/>
                     </StackLayout>
@@ -86,12 +86,65 @@
                 <!-- 질문6 -->
                 <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
                     <StackLayout>
-                        <Label Text="Q6: 내용을 입력하시오"
+                        <Label Text="Q6: 서양화를 즐기는 방법은 무엇인가요?"
                                FontSize="Small"
                                FontAttributes="Bold"
                                TextColor="Black"
                                Margin="0,0,0,5"/>
-                        <Label Text="A6: 내용을 입력하시오"
+                        <Label Text="A6:  작품의 구성, 색채, 빛의 표현 등에 주목하여 감상해보세요.서양화는 각각의 시대와 스타일마다 독특한 아름다움을 지니고 있습니다."
+                               FontSize="16"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- 질문7 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q7: 현대미술이란 무엇인가요?"
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
+                        <Label Text="A7:  '현대미술'은 전통적인 형식에서 벗어나 새로운 시도를 통해 창의적인 표현을 중시합니다. 독창적인 아이디어와 작가의 의도를 이해해보세요."
+                               FontSize="16"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+                <!-- 질문8 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q8: 초현실주의란 무엇인가요?"
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
+                        <Label Text="A8:  '초현실주의'는 무의식의 세계를 탐구하며 꿈과 현실을 넘나드는 이미지를 특징으로 합니다. 숨겨진 상징과 작가의 무의식적 표현을 발견해보세요."
+                               FontSize="16"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+                <!-- 질문9 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q9: 팝아트란 무엇인가요?"
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
+                        <Label Text="A9:  '팝아트'는 대중문화와 소비사회를 반영하여 일상적인 사물과 이미지를 재해석한 것이 특징입니다. 작품의 당시 사회적 맥락을 이해해보세요."
+                               FontSize="16"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+                <!-- 질문10 -->
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="0,1,0,0">
+                    <StackLayout>
+                        <Label Text="Q10: 추천하는 미술분야는 무엇인가요?"
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,5"/>
+                        <Label Text="A10:  현대미술(샘, 넘버 1A), 초현실주의(기억의 지속, 이미지의 배반), 팝아트(마릴린 딥티크, 키스) 등이 대표작입니다."
                                FontSize="16"
                                TextColor="Black"/>
                     </StackLayout>

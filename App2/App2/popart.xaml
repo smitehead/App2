@@ -1,12 +1,160 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Popart">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="App2.Popart"
+             BackgroundColor="Beige">
+    <AbsoluteLayout>
+        <Label Text="팝아트"
+               TextColor="Black"
+               FontSize="15"
+               AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               BackgroundColor="LightGray"
+               Padding="5"
+               Margin="5" />
+
+        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20">
+                <!-- 첫 번째 작품 -->
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,30,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTU4/MDAxNzE3MTgyMjY5MTAx.GRKl8_ntOwZ6K0_I0hbXdHZG1JPbcjGYI4W_PqqKdlsg.QAEsKgGqZNvTdGdoRCNYF3YH2dSwQ9aE1TJAA-y8Umsg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_040320.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="150">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 첫 번째 작품 정보 -->
+                <Label Text="앤디 워홀(1928.8.6~1987.2.22)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="마릴린 먼로(1962)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="마릴린 먼로란 인물의 얼굴과 사진에 다양한 색상으로 채워넣었다. 이는 워홀이 미국의 여배우 마릴린 먼로의 상징적인 이미지를 대중문화와 소비문화의 일환으로 취급한 것을 반영하고 있다. 그녀를 상품화하고 대중적으로 소비되는 이미지로 표현한 것을 보여준다. 이 작품은 팝 아트의 기법을 사용하여 대중문화와 소비문화에 대한 비판적 시선을 제시하며, 그의 예술적 스타일과 창의성을 잘 보여주고 있다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 두 번째 작품 -->
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTE3/MDAxNzE3MTgyMjY1Nzk4.1f953_j9CUVWrdNQRTWv5SmasnbRLx5glak22kxtqoEg.TzuEyc5xWxuugKROo2cFnthhAWNz43yFCkgCVqdI-1kg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_040336.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="150">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 두 번째 작품 정보 -->
+                <Label Text="로이 리히텐슈타인(1923.10.27~1997.9.29)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="행복한 눈물(1964)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="여성은 쾌활한 표정을 지으며 눈물을 흘리고 있다. 그러나 이 눈물은 슬픔이 아닌 행복한 눈물로 표현되어 있다. 대중문화와 소비문화에 대한 리히텐슈타인의 비판적 시선을 반영하고 있는 것이다. 이 작품은 현실과 상상, 슬픔과 기쁨 사이의 모호한 경계를 탐구하며, 대중문화의 상징적인 이미지를 재해석한 것으로 평가받고 있다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 세 번째 작품 -->
+                <Frame BorderColor="Blue"
+                       BackgroundColor="Blue"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DeepSkyBlue"
+                           BackgroundColor="DeepSkyBlue"
+                           CornerRadius="0"
+                           Padding="6"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfNiAg/MDAxNzE3MTgyMjgzMjE2.aIYhdDfsNwzWgMU-uWLUGi6lqWRBv1JNm_1DB2-gG8cg.gFeeh2Yzb7RjwqBD0FKYjuSZFV81wsqSd2ZBt4DEXCMg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_040152.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="160">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 세 번째 작품 정보 -->
+                <Label Text="피터 블레이크(1932.6.25~)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="비틀즈의 앨범 커버(Sgt. Pepper's Lonely Hearts Club Band) (1967)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="이 앨범 커버는 팝 아트의 아이콘 중 하나로 손꼽히며, 20세기 음악과 문화를 대표하는 작품으로 평가받고 있다. 앨범 커버에는 비틀즈의 네 명의 멤버가 이미테이션된 인형으로 그려져 있다. 그들 주변에는 수많은 유명인사와 상징적인 인물들이 등장하고 있다. 이들은 미국의 가수 마릴린 먼로 등 다양한 인물들로 앨범의 컨셉을 강조하고 있다. 또한,“Sgt. Pepper's Lonely Hearts Club Band”라는 밴드의 이름과 앨범의 제목이 크게 표시되어 있다. 이 앨범 커버는 비틀즈의 음악과 함께 그들의 상징적인 이미지를 포착하여, 팝 아트와 브리트팝의 결합을 보여주며, 그들이 미국의 문화와 영향을 받아 만든 것임을 보여준다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>

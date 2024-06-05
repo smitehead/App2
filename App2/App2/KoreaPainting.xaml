@@ -1,38 +1,161 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.KoreanPainting">
+             x:Class="App2.KoreanPainting"             
+             BackgroundColor="FloralWhite">
+    <AbsoluteLayout>
+        <!-- "동양화" 라벨을 오른쪽 위에 추가 -->
+        <Label Text="한국화"
+               TextColor="Black"
+               FontSize="15"
+               AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               BackgroundColor="LightGray"
+               Padding="5"
+               Margin="5" />
 
-    <ContentPage.Content>
-        <StackLayout>
-            <Frame BorderColor="Goldenrod"
+        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20">
+                <!-- 첫 번째 작품 -->
+                <Frame BorderColor="Goldenrod"
                        BackgroundColor="Goldenrod"
                        CornerRadius="0"
-                       Padding="2"
-                       Margin="0,20,0,0"
+                       Padding="1"
+                       Margin="0,30,0,0"
                        HorizontalOptions="Center"
                        VerticalOptions="Start">
-                <Frame BorderColor="DarkRed"
+                    <Frame BorderColor="DarkRed"
                            BackgroundColor="DarkRed"
                            CornerRadius="0"
                            Padding="5"
                            HorizontalOptions="Center"
                            VerticalOptions="Start">
-                    <Frame BorderColor="White"
+                        <Frame BorderColor="White"
                                BackgroundColor="White"
                                CornerRadius="0"
                                Padding="18"
                                HorizontalOptions="Center"
                                VerticalOptions="Start">
-                        <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMjk4/MDAxNzE3MTYwMjczNzU1.7f_5MVI0fPVlaklRmb8GmVbv3lshchULzmvisApnBQ8g.vRSWdLqgLCmwIXOVn58CkWCdxoCNihfOxP6bkGH93fgg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_215247.png?type=w966"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Start"
-                                    WidthRequest="300">
-                        </Image>
+                                    WidthRequest="140">
+                            </Image>
+                        </Frame>
                     </Frame>
                 </Frame>
-            </Frame>
-        </StackLayout>
-    </ContentPage.Content>
 
+                <!-- 첫 번째 작품 정보 -->
+                <Label Text="김홍도(1745~1807)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="후원유연(後苑遊宴)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="연못이 있고 취병(翠屛)으로 둘러싸인 정원과 그 안에 기생들을 불러 앉혀놓고 대금과 거문고 연주를 감상하는지 팔걸이에 기대어 두 눈을 지그시 감고 있는 인물의 거만하고 방자한 모습까지 집주인의 위세가 어떠한지를 그대로 보여준다. 가슴에 두른 세조대(細條帶)의 붉은 색이 선명하니 벼슬은 정3품 당상관이다. 거기다 집안에 연못을 파고 학을 기르고 취병까지 설치할 정도면 재물도 꽤 많은 모양이다. 비췻빛 병풍이란 뜻의 취병은 병풍을 두르듯이, 마당의 사생활을 보호하면서 조경의 용도로 조성하였다. 취병은 살아 있는 초목을 향유하게 도와주는 예술적 성격도 띠었는데 취병을 통해 꽃과 나무를 창문이나 마루에서 감상했다. 취병은 이전에는 없던 것으로 18세기 전반기 부터 한양 부유층 가옥에 설치되기 시작하여 특히 정조 후반에 취병의 조성과 감상이 절정에 이렀다고 한다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 두 번째 작품 -->
+                <Frame BorderColor="Goldenrod"
+                       BackgroundColor="Goldenrod"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DarkRed"
+                           BackgroundColor="DarkRed"
+                           CornerRadius="0"
+                           Padding="5"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMjcx/MDAxNzE3MTYwODA4NjQ2.sxd9NRwRcZ4u51nLT8Fpbv_fvi34zCnMhLdoR390Zz4g.lZvnMbySgXYeU3caoTC_kATJKWeshKISddyMtZ1SSyQg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_220634.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="160">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 두 번째 작품 정보 -->
+                <Label Text="이중섭(1916.4.10~1956.9.6)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="황소(1954)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="한국의 서양화 도입기에 서양적인 화풍을 탈피하고, 독자적인 화풍을 만들었다. 억제할 수 없는 감정을 분출하듯 고개를 휘저어 올리는 소의 움직임을 그린 '황소'그림은 그의 표현력을 담아낸 대표작이다. 왼쪽으로 향한 얼굴과 눈빛은 공간을 장악한 느낌을 자아내고, 코와 입가의 선연한 붉은 색 및 배경의 붉은 노을은 강렬한 인상을 남긴다. 반면, 초점을 잃은 채 어딘가를 향하고 있는 눈은 소의 슬픈 내면을 강하게 전달하고 있다. 이는 이중섭 작가의 비극적인 내면을 담아 내고 있는 것 같다. 고된 삶을 살았던 그에게 소는 자신의 분신이기도 하다. 그의 그림에서 소는 갈등과 고통을 표현하기도 하고, 때로는 힘, 희망을 표현하기도 한다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 세 번째 작품 -->
+                <Frame BorderColor="Goldenrod"
+                       BackgroundColor="Goldenrod"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DarkRed"
+                           BackgroundColor="DarkRed"
+                           CornerRadius="0"
+                           Padding="5"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfNyAg/MDAxNzE3MTU5Nzg4MjE3.L9IjjpvIlaaVS1HWytiDG-xq4ya3XshcTsIIgBF-licg.aaAAMcbNPgqZWNzCwBl8BObeHy7IYVSXr0SUpukeqA0g.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_214519.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="170">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 세 번째 작품 정보 -->
+                <Label Text="정선(鄭歚)(1676.1.3~1759)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="금강전도(1734)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="1984년 국보로 지정되었다. 금강전도는 내금강산의 특징을 잘 묘사한 것은 물론 당시 사람들의 우주관과 불교의 정토사상(淨土思想)이 반영되어 있다. 즉, 옛날 중국의 회화이론가인 종병(宗炳)에서 비롯된,“젊어서 산천을 돌아보고, 늙어서 이들을 그려 벽에 걸어 놓고 그 속에 노닌다.”는 와유(臥游: 臥以游之의 준말로서 산수화를 보며 즐기는 일)라는 동양 산수화의 전통사상이 담겨 있는 듯하다. “만이천봉 개골산, 누가 참 모습 그릴런가. 뭇 향기 동해 밖에 떠오르고, 쌓인 기운 세계에 서려 있네. 몇 송이 연꽃 해맑은 자태 드러내고, 솔과 잣나무 숲에 절간일랑 가려 있네. 비록 걸어서 이제 꼭 찾아간다 해도, 그려서 벽에 걸어 놓고 실컷 보느니만 못하겠네.”"
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>

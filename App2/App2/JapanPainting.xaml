@@ -1,36 +1,163 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.JapanPainting">
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <Frame BorderColor="Goldenrod"
+             x:Class="App2.JapanPainting"             
+             BackgroundColor="FloralWhite">
+    <AbsoluteLayout>
+        <!-- "동양화" 라벨을 오른쪽 위에 추가 -->
+        <Label Text="일본화"
+               TextColor="Black"
+               FontSize="15"
+               AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               BackgroundColor="LightGray"
+               Padding="5"
+               Margin="5" />
+
+        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20">
+                <!-- 첫 번째 작품 -->
+                <Frame BorderColor="Goldenrod"
                        BackgroundColor="Goldenrod"
                        CornerRadius="0"
-                       Padding="2"
-                       Margin="0,20,0,0"
+                       Padding="1"
+                       Margin="0,30,0,0"
                        HorizontalOptions="Center"
                        VerticalOptions="Start">
-                <Frame BorderColor="DarkRed"
+                    <Frame BorderColor="DarkRed"
                            BackgroundColor="DarkRed"
                            CornerRadius="0"
                            Padding="5"
                            HorizontalOptions="Center"
                            VerticalOptions="Start">
-                    <Frame BorderColor="White"
+                        <Frame BorderColor="White"
                                BackgroundColor="White"
                                CornerRadius="0"
                                Padding="18"
                                HorizontalOptions="Center"
                                VerticalOptions="Start">
-                        <Image Source="https://lh6.googleusercontent.com/proxy/lziKEwUDSxeUbuES-a5LkI_vd0rOEA0VPb1oDGFisGIuY0R36vPD2qqENMcn7kq75sWsSXZV7gmNj5PPT7xbfokNXenbAO2uque4UYvmwXTkloxuWX_F6P4KkE28Ue-Ml5ciyKYJ"
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfNTUg/MDAxNzE3MTU4NzM5NTE1.LGatdekNew3qJiL8TZKH8qvE-qeHVHFuwcgubm4sUiQg.-ZR4a3dOoCv2JllS264EKCxjAhtj41p60cxdckrmHVAg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_205958.png?type=w966"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Start"
-                                    WidthRequest="300">
-                        </Image>
+                                    WidthRequest="200">
+                            </Image>
+                        </Frame>
                     </Frame>
                 </Frame>
-            </Frame>
-        </StackLayout>
-    </ContentPage.Content>
+
+                <!-- 첫 번째 작품 정보 -->
+                <Label Text="가쓰시카 호쿠사이(葛飾北斎) (1760.10.31~1849.5.10)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="가나가와 해변의 높은 파도 아래(神奈川沖浪裏)(1831)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="거대한 파도가 험한 바다를 지배하는 가운데 그 파도에 휩쓸리기 직전인 조그만 배 세 척을 담아냈다. 배를 삼키기 직전에 가장 높은 지점에서 정지한 파도는 마치 날카로운 발톱과 같은 거품을 내뿜고 있는데, 이는 자연의 압도적인 힘을 강조하며 자연의 힘에 비하면 인간의 존재는 보잘것 없다는 것을 암시하고 있다.
+
+그 뒤로는 아주 작게 후지산을 그려내, 정적인 분위기와 파도를 대비시켜 전경에 긴장감을 부여하게 했다. 눈 덮인 후지산 뒤의 미묘한 색조 변화는 그 주변에 걱정스러운 분위기를 도출한다. 이른바 보카시 (暈し)라 불리는 이 기법은 판화를 인쇄하기 전에 목판에서 물감을 조금 닦아내 여리게 보이도록 한 것이다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 두 번째 작품 -->
+                <Frame BorderColor="Goldenrod"
+                       BackgroundColor="Goldenrod"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DarkRed"
+                           BackgroundColor="DarkRed"
+                           CornerRadius="0"
+                           Padding="5"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfMTU2/MDAxNzE3MTU4NzQ3MzI0.WVbrW36DHcE4KF9fOj0acesX_m2etrX3LpEuQfaj_c8g.PK9T1jzcjKtZXjsh0H_cIc8kmV_-1jmO9CExvFBiMyUg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_211044.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="220">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 두 번째 작품 정보 -->
+                <Label Text="기타가와 우타마로(喜多川歌麿) (​1754~1806)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="미인도(1783)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="부각된 여성의 흰 목덜미, 흐르는 듯한 리드미컬한 곡선, 여성의 부드러운 피부의 감촉 등을 살려 관능적인 여성상으로 탈바꿈 시킨 것 얼굴 위주의 미인화는 종전과 다르게 얼굴 윤곽선을 없앤 부드러운 육감미, 여성의 심리까지 묘출시킨 미묘한 뉘앙스, 고급스러운 추상적인 장식문양으로 배경 없는 배우로 우타마로 특유의 미인화 양식은 1790년대를 풍미했다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 세 번째 작품 -->
+                <Frame BorderColor="Goldenrod"
+                       BackgroundColor="Goldenrod"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="DarkRed"
+                           BackgroundColor="DarkRed"
+                           CornerRadius="0"
+                           Padding="5"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA1MzFfOTEg/MDAxNzE3MTU4NzQ4NTEw.nZeqqw2eUWIc61U1gl93CMIplBFS06gLNK9925VZGqIg.FV5ept7ml68ZmDgXZm8lNviIQKZS6GnF7w-fqTSc_uMg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-05-31_211858.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="110">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 세 번째 작품 정보 -->
+                <Label Text="이시다 테쓰야(石田徹也) (1973.6.16~2005.5.23)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="옥상 난민(1996)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="사회가 부여하는 의무와 기대감의 압박을 힘들게 견뎌내는 한 인간의 연약함을 적나라하게 드러냈다. 이 작품 속 인물은 계단에 갇혀 있다. 그는 ‘만약에 인생이 계단이고 목표가 오르는 것이라면, 결국 맨 꼭대기에 다다르면 어떻게 될까?’라는 질문을 던지는 듯하다. 여기서 계단은 물질적 풍요와 권력을 통해 계급 상승을 일구고자 안간힘을 다하는 현대인의 끝없는 욕망을 상징한다. 계단에 갇힌 남자의 표정은 꼭대기에 오르기 위해 견뎌내야 하는 영원한 노동의 굴레를 연상시킨다. 이끼가 잔뜩 끼고 녹이 슨 낡은 계단은 결국 꼭대기에 오른 이후의 미래가 그다지 밝지 않다고 말하는 듯하다. 무엇을 위해 그토록 오르려고 하는가. 물질적 풍요를 위해 정신적 피폐를 감당하는 것은 과연 옳은 일인가. 관객으로 하여금 작품 앞에 선 순간만이라도 자신의 삶을 되돌아보고, 그 의미를 찾도록 하는 힘을 지닌 그림이다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>

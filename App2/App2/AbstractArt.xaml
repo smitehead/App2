@@ -1,12 +1,161 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.AbstractArt">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="App2.AbstractArt"            
+             BackgroundColor="Gainsboro">
+    <AbsoluteLayout>
+        <!-- "동양화" 라벨을 오른쪽 위에 추가 -->
+        <Label Text="추상화"
+               TextColor="Black"
+               FontSize="15"
+               AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               BackgroundColor="LightGray"
+               Padding="5"
+               Margin="5" />
+
+        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20">
+                <!-- 첫 번째 작품 -->
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,30,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfNjkg/MDAxNzE3MTc2MDk1ODk2.okh0NQUhXmbnCdXqs_wfQytlqkoUrKVQevD5nHxEiEwg.7hBpjT7QpqRH7UOr_oGH2FaMFa9y-SIylQ9B-TY7Xo4g.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_021853.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="200">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 첫 번째 작품 정보 -->
+                <Label Text="피트 몬드리안 (1872.3.7~1944.2.1)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="빨강, 파랑, 노랑의 구성 II (1930)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="몬드리안의 신조형주의 이론을 완벽하게 구현한 대표작이다. 수직과 수평의 검은 선으로 나누어진 캔버스에 빨강, 파랑, 노랑의 기본 색과 흰색의 면을 배치한 작품이다. 몬드리안은 자연의 형태를 기하학적인 추상으로 단순화시키고, 순수한 형태와 색채를 통해 조화와 균형을 표현하려 했다. 그는 복잡한 현실을 단순한 선과 색으로 환원함으로써, 순수한 조형미를 추구했다. 이 작품은 겉보기에는 단순해 보이지만, 몬드리안은 이 안에서 완벽한 비례와 균형을 찾기 위해 신중하게 구성했다. 수직과 수평의 선은 대조와 균형을 이루며, 색의 배치는 시각적인 리듬과 조화를 만들어냈다. 이는 몬드리안이 자연의 혼돈 속에서 질서를 찾아내고자 하는 그의 철학을 반영한 것이었다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 두 번째 작품 -->
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfODcg/MDAxNzE3MTc2ODg1NDAz.5zPtUEVWeBp6rsbu2Vn6Z0YqRM9K-wSpN3c39UlX-T4g.7vipeYj_lJgL3VxcXstfHuYfBfoG8gjhYacJ8o7r_AMg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_023412.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="160">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 두 번째 작품 정보 -->
+                <Label Text="잭슨 폴록 (1912.1.28~1956.8.11)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="Number 4 (1950)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="추상표현주의의 대표 작가, 20세기 미국 미술을 대표하는 아이콘. 잭슨 폴락은 커다란 캔버스를 바닥에 놓고 물감을 흩뿌려 그림을 그리는 '드립 페인팅' 기법으로 회화의 정의를 바꾼 예술가이다. 거칠고 충동적인 삶을 살며 자동차와 술, 재즈, 광할한 대자연과 예술을 사랑했다. Number 4는 거대한 캔버스에 무작위로 보이지만 조화롭게 얽혀 있는 선과 색의 조합을 특징으로 한다. 폴록의 작업 방식은 우연성과 의도성이 결합된 것으로, 그의 움직임과 에너지가 직접적으로 드러난다. 이는 폴록이 추구했던 내면의 감정과 무의식을 표현하는 방법이기도 하다. 작품은 관람자에게 강렬한 시각적 경험을 제공하며, 색과 선의 복잡한 얽힘 속에서 각각의 관람자는 자신만의 해석과 감정을 발견할 수 있다. 폴록의 작품은 전통적인 미술의 경계를 허물고, 추상 표현주의의 새로운 가능성을 열어준 중요한 예술적 시도로 평가받고 있다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                <!-- 세 번째 작품 -->
+                <Frame BorderColor="YellowGreen"
+                       BackgroundColor="YellowGreen"
+                       CornerRadius="0"
+                       Padding="1"
+                       Margin="0,20,0,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start">
+                    <Frame BorderColor="OrangeRed"
+                           BackgroundColor="OrangeRed"
+                           CornerRadius="0"
+                           Padding="8"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start">
+                        <Frame BorderColor="White"
+                               BackgroundColor="White"
+                               CornerRadius="0"
+                               Padding="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start">
+                            <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDFfMTgz/MDAxNzE3MTc3ODk1MzE1.efV5TSnXYEF8N_3t1cooAPP0GfpVls9fHo8tJ1vpYN0g.-1MDaPdIwZplyRvZQs9iURND3lsSuVXUv5zT3nqwtx4g.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2024-06-01_024915.png?type=w966"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    WidthRequest="220">
+                            </Image>
+                        </Frame>
+                    </Frame>
+                </Frame>
+
+                <!-- 세 번째 작품 정보 -->
+                <Label Text="바실리 칸딘스키 (1866.12.16~1944.12.13)"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="즉흥 31 (1913)"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,5" />
+                <Label Text="이 작품은 혼란스러우면서도 조화로운 색채와 형태로 구성된 작품이었다. 칸딘스키는 음악에서 영감을 받아, 회화에서도 감정을 직접적으로 전달하려고 했다. 그는 색채와 형태를 통해 소리와 리듬을 시각적으로 표현하고자 했으며, 이는 그의 작품에서 중요한 요소로 작용했다. 이 작품은 제목에서 알 수 있듯이 바다에서 벌어지는 전투를 주제로 하고 있다. 그러나 칸딘스키는 구체적인 형태를 최소화하고, 대신 색채와 선을 통해 전투의 역동성과 감정을 표현했다. 혼란스러운 붓질과 겹쳐진 색채는 전투의 격렬함과 혼란을 상징하며, 동시에 그 속에서 찾아볼 수 있는 조화와 균형을 나타내고 있다."
+                       FontSize="Small"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="400"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>
