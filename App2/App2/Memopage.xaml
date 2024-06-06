@@ -5,84 +5,92 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="App2.Memopage"
-             Padding="20">
+             Padding="20"
+             BackgroundColor="WhiteSmoke">
 
-    <StackLayout>
-        <!-- 상단 이미지 -->
-        <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDVfMTc1/MDAxNzE3NTUxNTI5MjQ3.lbUGkQE1OoiFBrDCWM_4qfpiKOv9EAjbecznErOVdJ8g.pw03tUVi7S31PD9vxSBX2x5hXzwutEPvAETpr-CIrPIg.PNG/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2024-06-05_103840.png?type=w966" 
-               Aspect="AspectFit"
-               HorizontalOptions="Center"
-               VerticalOptions="Start"/>
+    <ScrollView>
+        <StackLayout>
+            <!-- 상단 이미지 -->
+            <Frame BackgroundColor="#d85050" Padding="6" HorizontalOptions="Center">
+                <Frame BackgroundColor="White" Padding="13">
+                    <Image Source="https://postfiles.pstatic.net/MjAyNDA2MDZfMjM0/MDAxNzE3NjY3MTg5NDc3.cngcQ28Easy5Qsek0hpD3icvAWEPd9GAzQ03xVIUz_og.Des1wZaVdBkXlfV9AAHOXuFlcRNUvFSpIW47bHotAskg.PNG/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2024-06-06_184606.png?type=w966" 
+                           Aspect="AspectFit"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"/>
+                </Frame>
+            </Frame>
 
-        <Frame BackgroundColor="#4097e9"
-               CornerRadius="30"
-               Padding="0"
-               Margin="90,0">
             <Label Text="나만의 감상문"
-                   TextColor="#fff"
-                   FontSize="20"
+                   TextColor="#d85050"
+                   FontSize="25"
                    FontAttributes="Bold"
                    Padding="10"
                    HorizontalOptions="Center"
                    HorizontalTextAlignment="Center"/>
-        </Frame>
 
-        <StackLayout VerticalOptions="StartAndExpand">
-            <ListView x:Name="lv_todo" HasUnevenRows="True">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Vertical" 
-                                         Margin="0, 20, 0, 0"
-                                         Spacing="0">
-                                <StackLayout>
-                                    <Label Text="{Binding TimeTodo}" FontSize="11"/>
-                                </StackLayout>
-                                <StackLayout Orientation="Horizontal" Spacing="0">
-                                    <Entry x:Name="et_todo_title"
-                                       Text="{Binding Title}"
-                                       HorizontalOptions="FillAndExpand"/>
-                                    <Button x:Name="btn_todo_modify"
-                                        Text="mod"
-                                        WidthRequest="60"
-                                        Clicked="btn_todo_modify_Clicked"/>
-                                    <Button x:Name="btn_todo_delete"
-                                        Text="Del"
-                                        WidthRequest="60"
-                                        Clicked="btn_todo_delete_Clicked"/>
-                                </StackLayout>
+            <!-- Horizontal Line -->
+            <BoxView HeightRequest="1"
+                     BackgroundColor="#d85050"
+                     HorizontalOptions="FillAndExpand"
+                     Margin="0,0,0,20"/>
 
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
-        <StackLayout BackgroundColor="#deefff"
-                     Padding="10"
-                     Margin="0, 20, 0, 0"
-                     Spacing="0">
-            <Label Text="한줄 감상평"
-                   TextColor="#4097e9"
-                   FontAttributes="Bold"
-                   FontSize="17"/>
-            <StackLayout Orientation="Vertical">
-                <Entry x:Name="et_todo_new"
-                       TextColor="#1582e9"
-                       Placeholder="감상평을 입력하세요."/>
-                <Frame CornerRadius="10"
-                       BackgroundColor="#d85050"
-                       Padding="0"
-                       Margin="0,10,0,0">
-                    <Button x:Name="btn_todo_new"
-                            Text="저장"
-                            BackgroundColor="#d85050"
-                            TextColor="#fff"
-                            FontSize="17"
-                            FontAttributes="Bold"
-                            Clicked="btn_todo_new_Clicked"/>
-                </Frame>
+            <StackLayout VerticalOptions="StartAndExpand">
+                <ListView x:Name="lv_todo" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical" 
+                                             Margin="0, 20, 0, 0"
+                                             Spacing="0">
+                                    <StackLayout>
+                                        <Label Text="{Binding TimeTodo}" FontSize="11"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" Spacing="0">
+                                        <Entry x:Name="et_todo_title"
+                                           Text="{Binding Title}"
+                                           HorizontalOptions="FillAndExpand"/>
+                                        <Button x:Name="btn_todo_modify"
+                                            Text="mod"
+                                            WidthRequest="60"
+                                            Clicked="btn_todo_modify_Clicked"/>
+                                        <Button x:Name="btn_todo_delete"
+                                            Text="Del"
+                                            WidthRequest="60"
+                                            Clicked="btn_todo_delete_Clicked"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <StackLayout BackgroundColor="LightGray"
+                         Padding="10"
+                         Margin="0, 20, 0, 0"
+                         Spacing="0">
+                <Label Text="한줄 감상평"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="17"/>
+                <StackLayout Orientation="Vertical">
+                    <Entry x:Name="et_todo_new"
+                           TextColor="Black"
+                           Placeholder="감상평을 입력하세요."/>
+                    <Frame CornerRadius="10"
+                           BackgroundColor="#d85050"
+                           Padding="0"
+                           Margin="0,10,0,0">
+                        <Button x:Name="btn_todo_new"
+                                Text="저장"
+                                BackgroundColor="#d85050"
+                                TextColor="#fff"
+                                FontSize="17"
+                                FontAttributes="Bold"
+                                Clicked="btn_todo_new_Clicked"/>
+                    </Frame>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>
