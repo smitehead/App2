@@ -13,7 +13,6 @@
                Padding="5"
                Margin="5" />
 
-        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
         <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                     AbsoluteLayout.LayoutFlags="All">
             <StackLayout Padding="20">

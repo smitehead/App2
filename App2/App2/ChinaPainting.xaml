@@ -3,7 +3,6 @@
              x:Class="App2.ChinaPainting"
              BackgroundColor="FloralWhite">
     <AbsoluteLayout>
-        <!-- "동양화" 라벨을 오른쪽 위에 추가 -->
         <Label Text="중국화"
                TextColor="Black"
                FontSize="15"
@@ -13,7 +12,6 @@
                Padding="5"
                Margin="5" />
 
-        <!-- 나머지 컨텐츠를 스크롤뷰로 감싸기 -->
         <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                     AbsoluteLayout.LayoutFlags="All">
             <StackLayout Padding="20">

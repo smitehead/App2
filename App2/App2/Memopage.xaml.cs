@@ -23,7 +23,6 @@ namespace App2
             InitializeComponent();
             conn = DependencyService.Get<ISQLite>().GetConnection();
 
-            // todos 컬렉션을 초기화합니다.
             todos = new ObservableCollection<TodoItem>();
         }
 
@@ -68,7 +67,7 @@ namespace App2
 
             if (result == 1)
             {
-                await DisplayAlert("Modify", "Data has changed.", "confirm");
+                await DisplayAlert("수정", "내용이 변경되었습니다.", "확인");
                 OnAppearing();
             }
         }
@@ -77,7 +76,7 @@ namespace App2
         {
             Button btn = (Button)sender;
             TodoItem todoItem = (TodoItem)(btn.BindingContext);
-            Task<bool> result = this.DisplayAlert("Delete", "Do you want to delete?", "Yes", "No");
+            Task<bool> result = this.DisplayAlert("삭제", "정말 삭제 하시겠습니까?", "네", "아니오");
 
             if (await result)
             {
